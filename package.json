@@ -1,8 +1,8 @@
 {
-  "name": "nextrader-deriv-bot",
+  "name": "primedollars-edge",
   "version": "1.0.0",
   "private": true,
-  "description": "Existing (as-is) Deriv trading-bot web application build",
+  "description": "PrimeDollars Edge — automated Deriv trading-bot platform (static frontend build)",
   "type": "module",
   "scripts": {
     "start": "node serve.mjs",

@@ -1,7 +1,7 @@
 {
-  "name": "NexTraderBot — Automated Trading Bots",
-  "short_name": "NexTraderBot",
-  "description": "Build, import, and run free & premium automated trading bots.",
+  "name": "PrimeDollars Edge — Automated Deriv Trading Bots",
+  "short_name": "PrimeDollars",
+  "description": "Connect Deriv accounts, run trading bots, monitor trades, and manage automated strategies.",
   "start_url": "/",
   "icons": [
     {

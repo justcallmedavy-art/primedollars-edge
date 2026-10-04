@@ -1,6 +1,6 @@
 /**
- * Local static dev server for the existing production build of the
- * NexTrader-style Deriv bot application (served exactly as built).
+ * Local static dev server for the PrimeDollars Edge
+ * production build (served exactly as built).
  *
  * - Serves files from this directory
  * - SPA fallback: any unknown path without a file extension returns index.html

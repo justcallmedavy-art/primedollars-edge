@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bot.nextrader.live/sitemap.xml
+Sitemap: https://primedollarsedge.com/sitemap.xml
