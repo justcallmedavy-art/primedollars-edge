@@ -1,0 +1,23 @@
+{
+  "name": "NexTraderBot — Automated Trading Bots",
+  "short_name": "NexTraderBot",
+  "description": "Build, import, and run free & premium automated trading bots.",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ff444f",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

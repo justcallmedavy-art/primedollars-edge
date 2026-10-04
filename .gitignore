@@ -1,0 +1,10 @@
+# Thread/tooling metadata
+.freebuff/
+
+# Secrets — never commit real environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/

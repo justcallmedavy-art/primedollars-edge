@@ -1,0 +1,14 @@
+{
+  "name": "nextrader-deriv-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Existing (as-is) Deriv trading-bot web application build",
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "dev": "node serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
