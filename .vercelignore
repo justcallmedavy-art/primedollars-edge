@@ -1,0 +1,14 @@
+# Never upload repo/tooling metadata
+.git
+.gitignore
+.vercel
+.freebuff
+
+# Secrets and env templates are not public site assets
+.env
+.env.*
+
+# Local tooling only
+node_modules
+serve.mjs
+.vercelignore
