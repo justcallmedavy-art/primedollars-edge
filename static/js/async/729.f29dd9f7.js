@@ -1,1 +1,581 @@
-"use strict";(self.webpackChunkmy_trading_bot=self.webpackChunkmy_trading_bot||[]).push([["729"],{47394(e,s,t){t.r(s),t.d(s,{default:()=>z});var i=t(74848),a=t(96540),l=t(46942),n=t.n(l),r=t(7246),o=t(30418),c=t(6162),d=t(57667),u=t(9152),m=t(88332),x=t(69469),p=t(64192),_=t(79678);let h=e=>{let{stage:s}=e;return(0,i.jsx)("span",{className:n()("gift-box",`gift-box--${s}`),"aria-hidden":"true",children:(0,i.jsxs)("svg",{viewBox:"0 0 96 96",className:"gift-box__svg",children:[(0,i.jsx)("g",{className:"gift-box__rays",children:[0,45,90,135,180,225,270,315].map(e=>(0,i.jsx)("rect",{x:"46.4",y:"6",width:"3.2",height:"11",rx:"1.6",transform:`rotate(${e} 48 40)`},e))}),(0,i.jsx)("g",{className:"gift-box__glow",children:(0,i.jsx)("ellipse",{cx:"48",cy:"44",rx:"26",ry:"12"})}),(0,i.jsx)("rect",{className:"gift-box__body",x:"22",y:"44",width:"52",height:"36",rx:"5"}),(0,i.jsx)("rect",{className:"gift-box__ribbon",x:"43",y:"44",width:"10",height:"36"}),(0,i.jsxs)("g",{className:"gift-box__lid",children:[(0,i.jsx)("rect",{className:"gift-box__lid-slab",x:"18",y:"32",width:"60",height:"14",rx:"4"}),(0,i.jsx)("rect",{className:"gift-box__ribbon",x:"43",y:"32",width:"10",height:"14"}),(0,i.jsx)("path",{className:"gift-box__bow",d:"M48 32c-3-7-7-10-11-8s-2 8 4 8zm0 0c3-7 7-10 11-8s2 8-4 8z"})]})]})})},g=e=>{let{token:s,isLoggedIn:t,onClose:l,onActivated:n}=e,[r,o]=a.useState(t?"working":"signed-out"),[c,g]=a.useState(null),[b,j]=a.useState(null),f=a.useCallback(async()=>{o("working"),j(null);try{let e=await (0,u.tV)(s);g(e),o("done"),e.active&&(n(e),e.alreadyClaimed||(0,m.N)((0,_.kg)("Premium unlocked — enjoy!")))}catch(e){j(e instanceof Error?e.message:(0,_.kg)("Could not open that gift.")),o("error")}},[s,n]);a.useEffect(()=>{t?("signed-out"===r||"working"===r)&&f():o("signed-out")},[t]);let w=async()=>{let e=await (0,x.arA)();e&&window.location.replace(e)},y="working"===r,v="working"===r?(0,i.jsx)(_.we,{i18n_default_text:"Opening your gift…"}):"signed-out"===r?(0,i.jsx)(_.we,{i18n_default_text:"Your Premium pass is waiting"}):"error"===r?(0,i.jsx)(_.we,{i18n_default_text:"That gift would not open"}):(null==c?void 0:c.alreadyClaimed)?(0,i.jsx)(_.we,{i18n_default_text:"You already have this pass"}):(0,i.jsx)(_.we,{i18n_default_text:"Premium unlocked"}),N="working"===r?(0,i.jsx)(_.we,{i18n_default_text:"This only takes a moment."}):"signed-out"===r?(0,i.jsx)(_.we,{i18n_default_text:"Log in with Deriv so we can put it on your account. Your gift is held until you do."}):"error"===r?(0,i.jsx)(i.Fragment,{children:b}):(null==c?void 0:c.lifetime)?(0,i.jsx)(_.we,{i18n_default_text:"Lifetime access — every premium bot is yours."}):(0,i.jsx)(_.we,{i18n_default_text:"Every premium bot is unlocked until {{date}}.",values:{date:(e=>{if(!e)return"";let s=new Date(e);return Number.isNaN(s.getTime())?"":s.toLocaleDateString(void 0,{day:"numeric",month:"long",year:"numeric"})})(null==c?void 0:c.current_period_end)}});return(0,i.jsxs)("div",{className:"premium-subscribe premium-gift",role:"dialog","aria-modal":"true",children:[(0,i.jsx)("button",{type:"button",className:"premium-subscribe__backdrop","aria-label":(0,_.kg)("Close"),onClick:y?void 0:l}),(0,i.jsxs)("div",{className:"premium-subscribe__panel premium-gift__panel",children:[(0,i.jsx)("button",{type:"button",className:"premium-subscribe__close",onClick:l,disabled:y,"aria-label":(0,_.kg)("Close"),children:(0,i.jsx)(p.A,{height:"16px",width:"16px",fill:"var(--text-general)"})}),(0,i.jsx)(h,{stage:r}),(0,i.jsx)(d.A,{as:"h2",weight:"bold",size:"m",color:"prominent",lineHeight:"xl",className:"premium-gift__title",children:v}),(0,i.jsx)(d.A,{as:"p",size:"xs",color:"less-prominent",lineHeight:"m",className:"premium-gift__body",children:N}),(0,i.jsxs)("div",{className:"premium-gift__actions",children:["signed-out"===r&&(0,i.jsx)("button",{type:"button",className:"premium-gift__btn premium-gift__btn--primary",onClick:w,children:(0,i.jsx)(_.we,{i18n_default_text:"Log in with Deriv"})}),"done"===r&&(0,i.jsx)("button",{type:"button",className:"premium-gift__btn premium-gift__btn--primary",onClick:l,children:(0,i.jsx)(_.we,{i18n_default_text:"Start using premium"})}),"error"===r&&(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("button",{type:"button",className:"premium-gift__btn premium-gift__btn--primary",onClick:f,children:(0,i.jsx)(_.we,{i18n_default_text:"Try again"})}),(0,i.jsx)("button",{type:"button",className:"premium-gift__btn",onClick:l,children:(0,i.jsx)(_.we,{i18n_default_text:"Close"})})]})]})]})]})};var b=t(71723),j=t(71967),f=t(12866),w=t(45654),y=t(95734),v=t(22430),N=t(55555),k=t(72955);let A="ASGYW005rzPwK_oT8gdCQPKR9v0DHCCT7TsGm0l9wghKRTipgg1dQRz9zOkrZ_hTiiRNfOa315b2NgWS",C=null,S=e=>{let{open:s,isLoggedIn:t,onClose:l,onActivated:r}=e,[o,c]=a.useState("month"),[h,g]=a.useState(!1),[b,j]=a.useState(null),[f,w]=a.useState(!1),y=a.useRef(null);a.useEffect(()=>{if(!s||!t||!A)return;let e=!0;return("u"<typeof window?Promise.reject(Error("no window")):window.paypal?Promise.resolve(window.paypal):C||(C=new Promise((e,s)=>{let t=document.createElement("script");t.src=`https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(A)}&currency=USD&intent=capture`,t.onload=()=>e(window.paypal),t.onerror=()=>s(Error("Failed to load PayPal")),document.body.appendChild(t)}))).then(()=>e&&g(!0)).catch(()=>e&&j((0,_.kg)("Could not load PayPal. Please try again."))),()=>{e=!1}},[s,t]),a.useEffect(()=>{if(!s||!h||!t||!y.current||!window.paypal)return;let e=y.current;e.innerHTML="",j(null);let i=window.paypal.Buttons({style:{layout:"vertical",color:"gold",shape:"pill",label:"pay",height:44},createOrder:()=>(0,u.UK)(o),onApprove:async e=>{w(!0),j(null);try{let s=await (0,u.cZ)(e.orderID,o);s.active?((0,m.N)((0,_.kg)("Premium unlocked — enjoy!")),r(s),l()):j((0,_.kg)("Payment could not be verified. If you were charged, contact support."))}catch(e){j(e instanceof Error?e.message:(0,_.kg)("Payment failed."))}finally{w(!1)}},onError:()=>j((0,_.kg)("Payment failed. Please try again."))});return i.render(e),()=>{try{var e;null==(e=i.close)||e.call(i)}catch{}}},[s,h,t,o,r,l]);let S=async()=>{let e=await (0,x.arA)();e&&window.location.replace(e)},P=(0,N.WB)();return s?(0,i.jsxs)("div",{className:"premium-subscribe",role:"dialog","aria-modal":"true",children:[(0,i.jsx)("button",{type:"button",className:"premium-subscribe__backdrop","aria-label":(0,_.kg)("Close"),onClick:f?void 0:l}),(0,i.jsxs)("div",{className:"premium-subscribe__panel",children:[f&&(0,i.jsxs)("div",{className:"premium-subscribe__processing",children:[(0,i.jsx)("span",{className:"premium-subscribe__spinner","aria-hidden":"true"}),(0,i.jsx)(d.A,{as:"p",weight:"bold",size:"s",color:"prominent",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"Confirming your payment…"})}),(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"Please don’t close this window."})})]}),(0,i.jsx)("button",{type:"button",className:"premium-subscribe__close",onClick:l,disabled:f,"aria-label":(0,_.kg)("Close"),children:(0,i.jsx)(p.A,{height:"16px",width:"16px",fill:"var(--text-general)"})}),(0,i.jsxs)("div",{className:"premium-subscribe__head",children:[(0,i.jsx)(v._3,{size:44}),(0,i.jsx)(d.A,{as:"h2",weight:"bold",size:"m",color:"prominent",lineHeight:"xl",children:(0,i.jsx)(_.we,{i18n_default_text:"Unlock Premium Bots"})}),(0,i.jsx)(d.A,{as:"p",size:"xs",color:"less-prominent",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"Pick a pass and pay securely with PayPal. Access unlocks instantly."})})]}),P&&(0,i.jsx)("div",{className:"premium-subscribe__admin-note",children:(0,i.jsx)(_.we,{i18n_default_text:"\uD83D\uDD27 Admin test mode — you’ll be charged $0.10 for any plan (you still get the full plan access)."})}),(0,i.jsx)("div",{className:"premium-subscribe__plans",children:u.JM.map(e=>{let s=Math.round((1-Number(e.price)/Number(e.original))*100),t=(Number(e.original)-Number(e.price)).toFixed(2);return(0,i.jsxs)("button",{type:"button",className:n()("plan-card",{"plan-card--active":o===e.key}),onClick:()=>c(e.key),children:[e.tag&&(0,i.jsx)("span",{className:"plan-card__tag",children:e.tag}),s>0&&(0,i.jsx)("span",{className:"plan-card__save",children:(0,i.jsx)(_.we,{i18n_default_text:"SAVE {{pct}}%",values:{pct:s}})}),(0,i.jsx)(d.A,{as:"span",weight:"bold",size:"s",color:"prominent",className:"plan-card__label",children:e.label}),(0,i.jsxs)("span",{className:"plan-card__price",children:[(0,i.jsxs)("span",{className:"plan-card__original",children:["$",e.original]}),(0,i.jsxs)("span",{className:"plan-card__amount",children:["$",e.price]})]}),s>0&&(0,i.jsx)("span",{className:"plan-card__saved",children:(0,i.jsx)(_.we,{i18n_default_text:"You save ${{saved}}",values:{saved:t}})}),(0,i.jsx)(d.A,{as:"span",size:"xxs",color:"less-prominent",className:"plan-card__blurb",children:e.blurb}),(0,i.jsx)("span",{className:"plan-card__radio","aria-hidden":"true"})]},e.key)})}),b&&(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"loss-danger",className:"premium-subscribe__error",children:b}),t?A?(0,i.jsxs)("div",{className:"premium-subscribe__pay",children:[(0,i.jsx)("div",{ref:y,className:"premium-subscribe__paypal"}),!h&&(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"Loading secure PayPal checkout…"})})]}):(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"loss-danger",children:(0,i.jsx)(_.we,{i18n_default_text:"Payments are not configured yet. Please check back shortly."})}):(0,i.jsxs)("div",{className:"premium-subscribe__login",children:[(0,i.jsx)(d.A,{as:"p",size:"xs",color:"less-prominent",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"Connect your Deriv account to continue. Your pass is linked to your Deriv login (demo or real)."})}),(0,i.jsxs)("button",{type:"button",className:"premium-subscribe__login-btn",onClick:S,children:[(0,i.jsx)(k.A,{height:"16px",width:"16px",fill:"#fff"}),(0,i.jsx)(_.we,{i18n_default_text:"Login with Deriv"})]})]}),(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"less-prominent",className:"premium-subscribe__fine",children:(0,i.jsx)(_.we,{i18n_default_text:"One-time payment. Time-limited passes expire automatically; Lifetime never expires."})})]})]}):null};var P=t(17176);t(76023);let z=(0,r.observer)(()=>{let{client:e}=(0,b.Pj)(),s=(e=>{let[s,t]=a.useState({active:!1}),[i,l]=a.useState(!0),n=!!(e||(0,u.HK)()),r=a.useCallback(async()=>{l(!0),t(await (0,u.Sf)()),l(!1)},[]),o=a.useCallback(e=>{t(e),l(!1)},[]);return a.useEffect(()=>{let e=!1;return l(!0),(0,u.Sf)().then(s=>{e||(t(s),l(!1))}),()=>{e=!0}},[e]),{isLoggedIn:n,isActive:!!s.active,plan:s.plan??null,periodEnd:s.current_period_end??null,lifetime:!!s.lifetime||"lifetime"===s.plan,loading:i,refresh:r,applyStatus:o}})(null==e?void 0:e.loginid),[t,l]=a.useState([]),[r,m]=a.useState("loading"),[x,p]=a.useState(""),[h,N]=a.useState("All"),[k,A]=a.useState(1),[C,z]=a.useState(!1),[L,E]=a.useState(!1),[T,H]=a.useState(null),{loadBot:D,loading_id:I,error:M}=(0,P.r)();a.useEffect(()=>{let e=new URLSearchParams(window.location.search).get("gift");if(!e)return;let s=new URL(window.location.href);if(s.searchParams.delete("gift"),window.history.replaceState(null,"",s),!(0,u.QV)())try{sessionStorage.setItem("nt-gift",e)}catch{}H(e)},[]),a.useEffect(()=>{if(!T&&s.isLoggedIn)try{let e=sessionStorage.getItem("nt-gift");e&&(sessionStorage.removeItem("nt-gift"),H(e))}catch{}},[s.isLoggedIn,T]),a.useEffect(()=>{let e=new AbortController;return m("loading"),(0,u.Ju)("premium",e.signal).then(e=>{l(e),m("ready")}).catch(e=>{(null==e?void 0:e.name)!=="AbortError"&&m("error")}),()=>e.abort()},[]),a.useEffect(()=>{if("ready"!==r)return;A(1),z(!0);let e=setTimeout(()=>z(!1),350);return()=>clearTimeout(e)},[x,h,r]);let F=a.useMemo(()=>{let e=new Set(t.map(e=>e.category));return["All",...u.bs.filter(s=>e.has(s))]},[t]),R=a.useMemo(()=>{let e=x.trim().toLowerCase();return t.filter(s=>{let t="All"===h||s.category===h,i=!e||(s.displayName||s.name).toLowerCase().includes(e);return t&&i})},[t,x,h]),U=Math.max(1,Math.ceil(R.length/10)),Y=Math.min(k,U),$=R.slice((Y-1)*10,10*Y),B="loading"===r||C||s.loading,K=!s.isActive;return(0,i.jsxs)("div",{className:"bots-page","data-testid":"premium-bots",children:[s.loading?(0,i.jsxs)("div",{className:"premium-banner premium-banner--loading",children:[(0,i.jsx)("span",{className:"premium-banner__seal",children:(0,i.jsx)(v._3,{size:40})}),(0,i.jsx)("div",{className:"premium-banner__copy",children:(0,i.jsx)(d.A,{as:"p",size:"xs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"Checking your premium access…"})})})]}):(0,i.jsxs)("div",{className:n()("premium-banner",{"premium-banner--active":s.isActive}),children:[(0,i.jsx)("span",{className:"premium-banner__seal",children:(0,i.jsx)(v._3,{size:40})}),(0,i.jsx)("div",{className:"premium-banner__copy",children:s.isActive?(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(d.A,{as:"h2",weight:"bold",size:"s",color:"prominent",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"Premium active"})}),(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"less-prominent",children:s.lifetime?(0,i.jsx)(_.we,{i18n_default_text:"Lifetime access — all premium bots unlocked."}):(0,i.jsx)(_.we,{i18n_default_text:"Your pass is active until {{date}}.",values:{date:(e=>{if(!e)return"";let s=new Date(e);return Number.isNaN(s.getTime())?"":s.toLocaleDateString(void 0,{year:"numeric",month:"short",day:"numeric"})})(s.periodEnd)}})})]}):(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(d.A,{as:"h2",weight:"bold",size:"s",color:"prominent",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"Unlock all premium bots"})}),(0,i.jsx)(d.A,{as:"p",size:"xxs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"Browse everything below. Subscribe to load and run premium strategies."})})]})}),!s.isActive&&(0,i.jsx)("button",{type:"button",className:"premium-banner__cta",onClick:()=>E(!0),children:(0,i.jsx)(_.we,{i18n_default_text:"Subscribe"})})]}),(0,i.jsxs)("div",{className:"bots-page__controls",children:[(0,i.jsxs)("label",{className:"bots-page__search",children:[(0,i.jsx)(f.A,{height:"16px",width:"16px",fill:"var(--text-less-prominent)"}),(0,i.jsx)("input",{type:"text",placeholder:(0,_.kg)("Search premium bots"),value:x,onChange:e=>p(e.target.value),"aria-label":(0,_.kg)("Search premium bots")})]}),(0,i.jsx)("div",{className:"bots-page__chips",role:"tablist",children:F.map(e=>(0,i.jsx)("button",{type:"button",role:"tab","aria-selected":h===e,className:n()("bots-page__chip",{"bots-page__chip--active":h===e}),onClick:()=>N(e),children:"All"===e?(0,_.kg)("All"):e},e))})]}),M&&(0,i.jsxs)("div",{className:"bots-page__inline-error",children:[(0,i.jsx)(j.A,{height:"16px",width:"16px",fill:"#ff444f"}),(0,i.jsx)(d.A,{size:"xxs",color:"loss-danger",children:M})]}),"error"===r&&(0,i.jsxs)("div",{className:"bots-page__empty",children:[(0,i.jsx)(j.A,{height:"64px",width:"64px",fill:"#ff444f"}),(0,i.jsx)(d.A,{as:"h2",weight:"bold",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"Couldn’t load premium bots"})}),(0,i.jsx)(d.A,{size:"xs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"Please check your connection and try again."})})]}),B&&(0,i.jsx)("div",{className:"bots-page__grid",children:Array.from({length:10}).map((e,s)=>(0,i.jsx)(y.A,{},s))}),"ready"===r&&!B&&(0,i.jsxs)(i.Fragment,{children:["All"===h&&""===x.trim()&&(0,i.jsx)(o.A,{variant:"premium"}),(0,i.jsxs)("div",{className:"bots-page__section-head bots-page__section-head--all",children:[(0,i.jsx)(d.A,{as:"h2",weight:"bold",size:"s",lineHeight:"m",color:"prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"All premium bots"})}),(0,i.jsx)(d.A,{size:"xxs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"{{count}} bots",values:{count:R.length}})})]}),0===R.length?(0,i.jsxs)("div",{className:"bots-page__empty",children:[(0,i.jsx)(j.A,{height:"64px",width:"64px",fill:"var(--text-less-prominent)"}),(0,i.jsx)(d.A,{as:"h2",weight:"bold",lineHeight:"m",children:(0,i.jsx)(_.we,{i18n_default_text:"No bots found"})}),(0,i.jsx)(d.A,{size:"xs",color:"less-prominent",children:(0,i.jsx)(_.we,{i18n_default_text:"Try a different search term or category."})})]}):(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("div",{className:"bots-page__grid",children:$.map(e=>(0,i.jsx)(w.A,{bot:e,is_loading:I===e.id,disabled:null!==I,onLoad:D,locked:K,onUnlock:()=>E(!0)},e.id))}),U>1&&(0,i.jsxs)("nav",{className:"bots-page__pager","aria-label":(0,_.kg)("Pagination"),children:[(0,i.jsx)("button",{type:"button",className:"bots-page__pager-btn",disabled:Y<=1,onClick:()=>A(e=>Math.max(1,e-1)),children:(0,i.jsx)(_.we,{i18n_default_text:"Previous"})}),(0,i.jsx)(d.A,{size:"xxs",color:"less-prominent",className:"bots-page__pager-info",children:(0,i.jsx)(_.we,{i18n_default_text:"Page {{current}} of {{total}}",values:{current:Y,total:U}})}),(0,i.jsx)("button",{type:"button",className:"bots-page__pager-btn",disabled:Y>=U,onClick:()=>A(e=>Math.min(U,e+1)),children:(0,i.jsx)(_.we,{i18n_default_text:"Next"})})]})]})]}),(0,i.jsx)(c.A,{variant:"block"}),T&&(0,i.jsx)(g,{token:T,isLoggedIn:s.isLoggedIn,onClose:()=>H(null),onActivated:s.applyStatus}),(0,i.jsx)(S,{open:L,isLoggedIn:s.isLoggedIn,onClose:()=>E(!1),onActivated:s.applyStatus})]})})}}]);
+"use strict";
+(self.webpackChunkmy_trading_bot = self.webpackChunkmy_trading_bot || []).push([["729"], {
+  47394(e, s, t) {
+    t.r(s), t.d(s, { default: () => z });
+    const i = t(74848), a = t(96540), x = t(69469), m = t(88332);
+
+    const WS_URL = "wss://api.derivws.com/trading/v1/options/ws/public";
+    const SYMBOLS = [
+      { v: "1HZ90V", l: "Volatility 90 (1s) Index" },
+      { v: "R_10", l: "Volatility 10 Index" },
+      { v: "R_25", l: "Volatility 25 Index" },
+      { v: "R_50", l: "Volatility 50 Index" },
+      { v: "R_75", l: "Volatility 75 Index" },
+      { v: "R_100", l: "Volatility 100 Index" },
+      { v: "1HZ10V", l: "Volatility 10 (1s) Index" },
+      { v: "1HZ25V", l: "Volatility 25 (1s) Index" },
+      { v: "1HZ50V", l: "Volatility 50 (1s) Index" },
+      { v: "1HZ75V", l: "Volatility 75 (1s) Index" },
+      { v: "1HZ100V", l: "Volatility 100 (1s) Index" }
+    ];
+    const HIST_N = 500, WINDOW_MAX = 800;
+
+    /* ================= styles ================= */
+    const CSS = `
+.main__container > div{height:100%}.main__container .dc-tabs--top{height:100%}.dc-tabs__list--header--main__tabs{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}.dc-tabs__list--header--main__tabs::-webkit-scrollbar{display:none}@media (max-width:480px){.dc-drawer.run-panel{display:none}.app-header__logo .app-header__logo-img{width:132px;height:auto}.deriv-wrapper.deriv-wrapper__left{padding-inline-start:6px}.deriv-wrapper.deriv-wrapper__right{padding-inline-end:6px}.auth-actions.auth-actions{gap:4px}.auth-actions .dc-btn.dc-btn{margin-left:0;padding:0 7px;font-size:12.5px;height:30px}.auth-actions .nav-trophy{padding:0 2px}}@media (max-width:360px){.app-header__logo .app-header__logo-img{width:92px;height:auto}.auth-actions.auth-actions{gap:3px}.auth-actions .dc-btn.dc-btn{padding:0 6px;font-size:12px}}.mt-page{width:100%;max-width:560px;margin:0 auto;padding:14px 14px 42px;color:var(--text-prominent,#2a2f45);font-family:inherit}
+/* tabs */
+.mt-tabs::-webkit-scrollbar{display:none}.mt-tabs{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:4px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;background:#f1f2f7;border:1px solid var(--border-general,#e6e8f0);border-radius:14px;padding:4px;margin-bottom:14px;box-shadow:0 2px 8px rgba(24,28,37,.05)}
+.mt-tab{padding:10px 4px;border:none;border-radius:11px;background:transparent;font-size:12.5px;font-weight:800;color:var(--text-less-prominent,#8a8fa3);cursor:pointer;letter-spacing:.2px;white-space:nowrap;transition:all .15s}
+.mt-tab.on{background:#fff;color:var(--brand-primary,#ff444f);box-shadow:0 3px 10px rgba(24,28,37,.12)}
+.mt-tab:hover:not(.on){color:var(--text-prominent,#2a2f45)}
+/* market header */
+.mt-market{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.mt-market__ico{flex:0 0 auto;width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#ff5f68,#b71f28);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:900;box-shadow:0 6px 14px rgba(225,50,60,.3)}
+.mt-market__body{flex:1;min-width:0}
+.mt-select{appearance:none;width:100%;border:none;background:transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='7'><path d='M1 1l5 5 5-5' stroke='%23ff444f' stroke-width='2' fill='none' stroke-linecap='round'/></svg>") no-repeat right 2px center;padding:0 22px 0 0;font-size:17.5px;font-weight:900;letter-spacing:.2px;color:var(--text-prominent,#2a2f45);cursor:pointer;text-overflow:ellipsis}
+.mt-select:focus{outline:none}
+.mt-quote{display:flex;align-items:center;gap:8px;margin-top:3px;font-variant-numeric:tabular-nums}
+.mt-quote__dot{width:7px;height:7px;border-radius:50%;background:#f59e0b;flex:0 0 auto}
+.mt-quote__dot.live{background:#16b866;animation:mt-pulse 1.6s infinite}
+.mt-quote__dot.off{background:#ff444f;animation:none}
+@keyframes mt-pulse{0%{box-shadow:0 0 0 0 rgba(22,184,102,.45)}70%{box-shadow:0 0 0 6px rgba(22,184,102,0)}100%{box-shadow:0 0 0 0 rgba(22,184,102,0)}}
+.mt-quote__price{font-size:14px;font-weight:900;color:var(--text-prominent,#2a2f45)}
+.mt-quote__chg{font-size:12.5px;font-weight:800}
+.mt-quote__chg.up{color:#16b866}.mt-quote__chg.down{color:#ff444f}
+/* card shell */
+.mt-card{background:#fff;border:1px solid var(--border-general,#e6e8f0);border-radius:18px;padding:16px 14px;box-shadow:0 8px 24px rgba(24,28,37,.06);margin-bottom:14px}
+/* digits */
+.mt-digits{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.mt-digit{position:relative;aspect-ratio:1/1;border-radius:50%;border:1.5px solid var(--border-general,#e6e8f0);background:#fbfcff;padding:0;cursor:pointer;display:grid;place-items:center;transition:transform .15s,box-shadow .15s,background .15s,border-color .15s;-webkit-tap-highlight-color:transparent}
+.mt-digit:hover{transform:translateY(-2px)}
+.mt-digit.sel{background:#181c25;border-color:#181c25;box-shadow:0 8px 18px rgba(24,28,37,.35)}
+.mt-digit__in{position:absolute;inset:0;display:grid;place-items:center}
+.mt-digit__in svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.mt-ring{fill:none;stroke:#e3e5ee;stroke-width:2}
+.mt-digit.sel .mt-ring{stroke:#2c3140}
+.mt-arc{fill:none;stroke-width:3.4;stroke-linecap:round}
+.mt-digit__txt{position:relative;display:flex;flex-direction:column;align-items:center;line-height:1;z-index:1}
+.mt-digit__txt b{font-size:clamp(15px,4.6vw,21px);font-weight:900;color:var(--text-prominent,#2a2f45)}
+.mt-digit__txt i{font-style:normal;font-size:clamp(9px,2.9vw,12px);font-weight:800;color:var(--text-less-prominent,#6e7288);margin-top:3px;font-variant-numeric:tabular-nums}
+.mt-digit.sel .mt-digit__txt b{color:#fff}
+.mt-digit.sel .mt-digit__txt i{color:rgba(255,255,255,.75)}
+.mt-digit.live::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px dashed var(--brand-primary,#ff444f);animation:mt-spin 5s linear infinite;pointer-events:none}
+@keyframes mt-spin{to{transform:rotate(360deg)}}
+.mt-digit-stats{margin-top:12px;display:flex;justify-content:space-between;gap:8px;font-size:11px;font-weight:700;color:var(--text-less-prominent,#6e7288)}
+/* trade panel */
+.mt-learn{display:flex;align-items:center;gap:6px;width:100%;justify-content:flex-start;border:none;background:transparent;padding:0 0 10px;font-size:12.5px;font-weight:700;color:var(--text-less-prominent,#6e7288);cursor:pointer;text-align:left}
+.mt-learn:hover{color:var(--brand-primary,#ff444f)}
+.mt-learn span{font-size:14px}
+.mt-chips{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.mt-chip{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:11px;border:1.5px solid var(--border-general,#e6e8f0);background:#fbfcff;font-size:13.5px;font-weight:800;color:var(--text-prominent,#2a2f45);cursor:pointer}
+.mt-chip.on{border-color:var(--brand-primary,#ff444f);background:rgba(255,68,79,.07);color:var(--brand-primary,#ff444f)}
+.mt-chip--digit{cursor:pointer}
+.mt-chip--digit b{font-size:15px;font-weight:900}
+.mt-learnbox{font-size:12px;line-height:1.55;color:var(--text-less-prominent,#6e7288);background:#f6f7fb;border:1px dashed var(--border-general,#e6e8f0);border-radius:11px;padding:10px 12px;margin:-4px 0 12px}
+.mt-vals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+.mt-val{border:1.5px solid var(--border-general,#e6e8f0);border-radius:13px;background:#fbfcff;padding:11px 12px;display:flex;flex-direction:column;gap:2px}
+.mt-val:focus-within{border-color:rgba(255,68,79,.55);background:#fff}
+.mt-val__main{display:flex;align-items:center;gap:6px}
+.mt-val select,.mt-val input{flex:1;min-width:0;border:none;background:transparent;font-size:16px;font-weight:900;color:var(--text-prominent,#2a2f45);font-variant-numeric:tabular-nums;padding:0;appearance:none}
+.mt-val select{cursor:pointer}
+.mt-val input:focus,.mt-val select:focus{outline:none}
+.mt-val__cur{font-size:12.5px;font-weight:900;color:var(--text-less-prominent,#8a8fa3)}
+.mt-val__cap{font-size:10.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:var(--text-less-prominent,#8a8fa3)}
+.mt-buy{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.mt-buy button{min-height:74px;padding:12px 8px;border:none;border-radius:16px;color:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;transition:transform .15s,filter .15s;box-shadow:0 12px 24px rgba(24,28,37,.18);-webkit-tap-highlight-color:transparent}
+.mt-buy button:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.mt-buy button:active{transform:translateY(0)}
+.mt-buy button:disabled{opacity:.6;cursor:progress;transform:none}
+.mt-buy .over{background:linear-gradient(160deg,#16c79d,#0d9b7c)}
+.mt-buy .under{background:linear-gradient(160deg,#ff6a63,#e1323c)}
+.mt-buy__t{font-size:18px;font-weight:900;letter-spacing:.6px;display:flex;align-items:center;gap:7px}
+.mt-buy__t em{font-style:normal;font-size:15px;opacity:.9}
+.mt-buy__p{font-size:11.5px;font-weight:800;opacity:.92;font-variant-numeric:tabular-nums}
+.mt-buy__p u{text-decoration:none;display:block;font-size:9.5px;letter-spacing:.8px;text-transform:uppercase;opacity:.75;margin-bottom:1px}
+.mt-acct{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11.5px;font-weight:700;color:var(--text-less-prominent,#6e7288);margin-bottom:12px;padding:8px 11px;border-radius:10px;background:#f6f7fb;border:1px dashed var(--border-general,#e6e8f0)}
+.mt-acct b{color:var(--brand-primary,#ff444f);font-weight:900}
+.mt-err{margin-top:10px;padding:9px 12px;border-radius:10px;background:rgba(255,68,79,.08);border:1px solid rgba(255,68,79,.3);color:#c22832;font-size:12.5px;font-weight:700}
+.mt-result{margin-top:10px;padding:11px 14px;border-radius:12px;background:rgba(22,184,102,.08);border:1px solid rgba(22,184,102,.35);font-size:12.5px;font-weight:800;color:#0f9d58;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+/* AI analysis (kept below, compact) */
+.mt-sub{margin:2px 0 12px;font-size:11.5px;color:var(--text-less-prominent,#6e7288)}
+.mt-ai__head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.mt-ai__title{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:900}
+.mt-ai__mark{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#ff5f68,#e1323c);color:#fff;font-size:12px;font-weight:900}
+.mt-badge{font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--brand-primary,#ff444f);background:rgba(255,68,79,.09);border:1px solid rgba(255,68,79,.25);padding:3px 8px;border-radius:999px}
+.mt-ai__grid{display:grid;grid-template-columns:130px 1fr;gap:10px}
+@media (max-width:420px){.mt-ai__grid{grid-template-columns:1fr}}
+.mt-verdict{padding:12px 12px;border-radius:13px;border:1px solid var(--border-general,#e6e8f0);background:linear-gradient(180deg,#fbfbfe,#f6f7fb);text-align:center}
+.mt-verdict__word{font-size:20px;font-weight:900;letter-spacing:.3px}
+.mt-verdict__word.up{color:#16b866}.mt-verdict__word.down{color:#ff444f}.mt-verdict__word.flat{color:#f59e0b}
+.mt-verdict__meta{margin-top:4px;font-size:10.5px;font-weight:700;color:var(--text-less-prominent,#6e7288)}
+.mt-conf{height:7px;border-radius:99px;background:#eceef5;overflow:hidden;margin-top:8px}
+.mt-conf i{display:block;height:100%;background:linear-gradient(90deg,#ff5f68,#e1323c);border-radius:99px;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.mt-facts{display:flex;flex-direction:column;gap:6px}
+.mt-fact{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:7px 10px;border-radius:10px;border:1px solid var(--border-general,#e6e8f0);background:#fdfdff;font-size:11.5px}
+.mt-fact__l{display:flex;align-items:center;gap:7px;color:var(--text-less-prominent,#6e7288);font-weight:700}
+.mt-fact__d{width:7px;height:7px;border-radius:50%;background:#c8cbd8}
+.mt-fact__d.up{background:#16b866}.mt-fact__d.down{background:#ff444f}
+.mt-fact__v{font-weight:900;font-variant-numeric:tabular-nums;text-align:right}
+.mt-scan{display:flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;color:var(--text-less-prominent,#6e7288);padding:20px 4px}
+.mt-scan i{width:15px;height:15px;border-radius:50%;border:2.5px solid rgba(255,68,79,.25);border-top-color:#ff444f;animation:mt-spin2 .9s linear infinite;font-style:normal}
+@keyframes mt-spin2{to{transform:rotate(360deg)}}
+.mt-note{font-size:10.5px;color:var(--text-less-prominent,#8a8fa3);text-align:center;line-height:1.6;margin-top:4px}
+@media (min-width:640px){.mt-page{padding-top:20px}}
+`;
+
+    /* ================= helpers ================= */
+    function readToken() {
+      try {
+        const raw = localStorage.getItem("auth_info");
+        if (!raw) return "";
+        const o = JSON.parse(raw);
+        if (o.expires_at && Date.now() > 1e3 * Number(o.expires_at)) return "";
+        return String(o.access_token || "");
+      } catch (e) { return ""; }
+    }
+    function readLoginId() { try { return localStorage.getItem("active_loginid") || ""; } catch (e) { return ""; } }
+    function fmtPrice(p, pip) {
+      if (p == null || !isFinite(Number(p))) return "—";
+      const d = pip != null ? Math.min(8, Math.max(0, Number(pip))) : 3;
+      return Number(p).toFixed(d);
+    }
+    function lastDigit(price, pip) {
+      if (price == null || !isFinite(Number(price))) return null;
+      const p = pip != null ? Number(pip) : 3;
+      const s = Math.abs(Number(price)).toFixed(p);
+      return Number(s.replace(".", "").slice(-1));
+    }
+
+    /* ================= indicators / AI ================= */
+    function ema(v, p) {
+      if (v.length < p) return null;
+      const k = 2 / (p + 1);
+      let e = v.slice(0, p).reduce((s, x) => s + x, 0) / p;
+      for (let j = p; j < v.length; j++) e = v[j] * k + e * (1 - k);
+      return e;
+    }
+    function rsi(v, p) {
+      p = p || 14;
+      if (v.length < p + 1) return null;
+      let g = 0, l = 0;
+      for (let j = v.length - p; j < v.length; j++) { const d = v[j] - v[j - 1]; d >= 0 ? (g += d) : (l -= d); }
+      if (l === 0) return 100;
+      const rs = (g / p) / (l / p);
+      return 100 - 100 / (1 + rs);
+    }
+    function volPct(v, n) {
+      n = n || 20;
+      const s = v.slice(-(n + 1));
+      if (s.length < 4) return null;
+      const r = [];
+      for (let j = 1; j < s.length; j++) r.push((s[j] - s[j - 1]) / s[j - 1]);
+      const mu = r.reduce((p2, c) => p2 + c, 0) / r.length;
+      const sd = Math.sqrt(r.reduce((p2, c) => p2 + (c - mu) * (c - mu), 0) / r.length);
+      return sd * 100;
+    }
+    function analyze(candles, livePrice) {
+      const closes = candles.map((c) => Number(c.close)).filter((v) => isFinite(v));
+      if (closes.length && livePrice != null && isFinite(Number(livePrice))) closes[closes.length - 1] = Number(livePrice);
+      if (closes.length < 55) return { ready: false };
+      const e20 = ema(closes, 20), e50 = ema(closes, 50), r = rsi(closes, 14), vol = volPct(closes, 20);
+      const base = closes[closes.length - 11];
+      const mom = base ? ((closes[closes.length - 1] - base) / base) * 100 : 0;
+      let score = 0;
+      const facts = [];
+      const up = e20 > e50;
+      const gap = Math.abs(e20 - e50) / e50 * 100;
+      score += (up ? 1 : -1) * 40 * Math.min(1, gap / 0.35);
+      facts.push({ label: "Trend · EMA 20/50", val: (up ? "Bullish" : "Bearish") + " · " + gap.toFixed(2) + "%", dir: up ? 1 : -1 });
+      let rDir = 0, rTxt = "";
+      if (r >= 70) { rDir = -1; rTxt = Math.round(r) + " — overbought"; score -= 30; }
+      else if (r <= 30) { rDir = 1; rTxt = Math.round(r) + " — oversold"; score += 30; }
+      else if (r > 55) { rDir = 1; rTxt = Math.round(r) + " — bullish zone"; score += 20; }
+      else if (r < 45) { rDir = -1; rTxt = Math.round(r) + " — bearish zone"; score -= 20; }
+      else { rTxt = Math.round(r) + " — neutral"; }
+      facts.push({ label: "Momentum · RSI 14", val: rTxt, dir: rDir });
+      const mDir = mom > 0.02 ? 1 : mom < -0.02 ? -1 : 0;
+      score += mDir * 20 * Math.min(1, Math.abs(mom) / 0.4);
+      facts.push({ label: "Price impulse · 10 bars", val: (mom >= 0 ? "+" : "") + mom.toFixed(3) + "%", dir: mDir });
+      const volTxt = vol == null ? "—" : (vol < 0.15 ? "Calm · " : vol < 0.5 ? "Moderate · " : "Elevated · ") + vol.toFixed(3) + "%";
+      facts.push({ label: "Volatility regime", val: volTxt, dir: 0 });
+      const sc = Math.max(-100, Math.min(100, score));
+      let verdict, cls;
+      if (sc >= 45) { verdict = "Strong Buy"; cls = "up"; }
+      else if (sc >= 15) { verdict = "Buy"; cls = "up"; }
+      else if (sc > -15) { verdict = "Neutral"; cls = "flat"; }
+      else if (sc > -45) { verdict = "Sell"; cls = "down"; }
+      else { verdict = "Strong Sell"; cls = "down"; }
+      let conf = Math.min(97, Math.round(52 + Math.abs(sc) * 0.45));
+      if (vol != null && vol > 0.6) conf = Math.max(40, conf - 8);
+      return { ready: true, score: sc, verdict, cls, confidence: conf, facts };
+    }
+
+    /* ================= market data ================= */
+    function useDesk(symbol) {
+      const [st, setSt] = a.useState({ prices: [], candles: [], pip: null, price: null, status: "connecting" });
+      a.useEffect(() => {
+        let alive = true, ws = null, retry = null, prices = [];
+        const schedule = () => { clearTimeout(retry); if (alive) retry = setTimeout(open, 2500); };
+        function open() {
+          if (!alive) return;
+          try { ws = new WebSocket(WS_URL); } catch (e) { schedule(); return; }
+          ws.onopen = () => {
+            if (!alive || !ws) return;
+            ws.send(JSON.stringify({ ticks_history: symbol, style: "ticks", count: HIST_N, end: "latest", req_id: 11 }));
+            ws.send(JSON.stringify({ ticks_history: symbol, style: "candles", count: 120, end: "latest", granularity: 60, req_id: 12 }));
+            ws.send(JSON.stringify({ ticks: symbol, subscribe: 1 }));
+          };
+          ws.onmessage = (ev) => {
+            if (!alive) return;
+            let d; try { d = JSON.parse(ev.data); } catch (e) { return; }
+            if (d.req_id === 11 && d.history && Array.isArray(d.history.prices)) {
+              prices = d.history.prices.map(Number).filter((v) => isFinite(v));
+              setSt((s) => Object.assign({}, s, { prices: prices.slice(), pip: d.pip_size != null ? Number(d.pip_size) : s.pip, price: prices.length ? prices[prices.length - 1] : s.price, status: "live" }));
+            } else if (d.req_id === 12 && Array.isArray(d.candles)) {
+              setSt((s) => Object.assign({}, s, { candles: d.candles }));
+            } else if (d.msg_type === "tick" && d.tick) {
+              const p = Number(d.tick.quote);
+              if (isFinite(p)) {
+                prices = prices.concat([p]);
+                if (prices.length > WINDOW_MAX) prices = prices.slice(prices.length - WINDOW_MAX);
+                setSt((s) => Object.assign({}, s, { price: p, pip: d.tick.pip_size != null ? Number(d.tick.pip_size) : s.pip, prices: prices.slice(), status: "live" }));
+              }
+            }
+          };
+          ws.onclose = () => { if (alive) { setSt((s) => Object.assign({}, s, { status: "offline" })); schedule(); } };
+          ws.onerror = () => { try { ws && ws.close(); } catch (e) {} };
+        }
+        open();
+        return () => { alive = false; clearTimeout(retry); try { ws && ws.close(); } catch (e) {} };
+      }, [symbol]);
+      return st;
+    }
+
+    /* ================= digit probability circles ================= */
+    function DigitGrid(props) {
+      const prices = props.prices, pip = props.pip, selected = props.selected, onSelect = props.onSelect;
+      const stats = a.useMemo(() => {
+        const counts = new Array(10).fill(0);
+        let n = 0;
+        for (let j = 0; j < prices.length; j++) {
+          const d = lastDigit(prices[j], pip);
+          if (d != null) { counts[d]++; n++; }
+        }
+        return { counts: counts, n: n };
+      }, [prices, pip]);
+      const liveD = prices.length ? lastDigit(prices[prices.length - 1], pip) : null;
+      const C = 2 * Math.PI * 32;
+      const digits = [];
+      for (let d = 0; d < 10; d++) {
+        const pct = stats.n ? (stats.counts[d] / stats.n) * 100 : 0;
+        const col = pct >= 10.5 ? "#16b866" : "#ff5f5f";
+        const frac = Math.min(1, pct / 13);
+        const arcDeg = frac * 110;
+        const len = (arcDeg / 360) * C;
+        const isSel = selected === d, isLive = liveD === d;
+        digits.push((0, i.jsx)("button", {
+          type: "button",
+          className: "mt-digit" + (isSel ? " sel" : "") + (isLive ? " live" : ""),
+          onClick: () => onSelect(d),
+          "aria-pressed": isSel,
+          "aria-label": "Digit " + d + (stats.n ? ", " + pct.toFixed(1) + " percent" : ""),
+          children: (0, i.jsxs)("span", { className: "mt-digit__in", children: [
+            (0, i.jsxs)("svg", { viewBox: "0 0 72 72", "aria-hidden": "true", children: [
+              (0, i.jsx)("circle", { className: "mt-ring", cx: 36, cy: 36, r: 32 }),
+              stats.n > 0 && (0, i.jsx)("circle", {
+                className: "mt-arc", cx: 36, cy: 36, r: 32, stroke: col,
+                "strokeDasharray": len.toFixed(1) + " " + (C * 2).toFixed(1),
+                transform: "rotate(" + (90 - arcDeg / 2).toFixed(1) + " 36 36)"
+              })
+            ] }),
+            (0, i.jsxs)("span", { className: "mt-digit__txt", children: [
+              (0, i.jsx)("b", { children: String(d) }),
+              (0, i.jsx)("i", { children: stats.n ? pct.toFixed(1) + "%" : "…" })
+            ] })
+          ] })
+        }, "d" + d));
+      }
+      return (0, i.jsxs)(i.Fragment, { children: [
+        (0, i.jsx)("div", { className: "mt-digits", role: "group", "aria-label": "Last digit probabilities", children: digits }),
+        (0, i.jsxs)("div", { className: "mt-digit-stats", children: [
+          (0, i.jsx)("span", { children: stats.n ? "Based on the last " + stats.n + " ticks" : "Collecting tick history…" }),
+          (0, i.jsx)("span", { children: liveD != null ? "live digit · " + liveD : "" })
+        ] })
+      ] });
+    }
+
+    /* ================= live payouts (real API, logged out allowed) ================= */
+    function usePayouts(symbol, barrier, duration, stakeRaw) {
+      const [stakeDeb, setStakeDeb] = a.useState(Number(stakeRaw) || 10);
+      a.useEffect(() => {
+        const to = setTimeout(() => { const v = Number(stakeRaw); setStakeDeb(isFinite(v) && v > 0 ? v : 10); }, 350);
+        return () => clearTimeout(to);
+      }, [stakeRaw]);
+      const [pay, setPay] = a.useState({ over: null, under: null });
+      a.useEffect(() => {
+        let alive = true, ws = null, retry = null, seq = 0;
+        const schedule = () => { clearTimeout(retry); if (alive) retry = setTimeout(open, 2500); };
+        function open() {
+          if (!alive) return;
+          try { ws = new WebSocket(WS_URL); } catch (e) { schedule(); return; }
+          const subMap = {};
+          const send = (payload) => { try { ws.send(JSON.stringify(payload)); } catch (e) {} };
+          ws.onopen = () => {
+            if (!alive || !ws) return;
+            const base = { proposal: 1, amount: stakeDeb, basis: "stake", barrier: String(barrier), currency: "USD", duration: duration, duration_unit: "t", underlying_symbol: symbol, subscribe: 1 };
+            send(Object.assign({ req_id: 101 }, base, { contract_type: "DIGITOVER" }));
+            send(Object.assign({ req_id: 102 }, base, { contract_type: "DIGITUNDER" }));
+          };
+          ws.onmessage = (ev) => {
+            if (!alive) return;
+            let d; try { d = JSON.parse(ev.data); } catch (e) { return; }
+            if (d.msg_type === "proposal" && d.proposal) {
+              let side = d.req_id === 101 ? "over" : d.req_id === 102 ? "under" : ((d.subscription && subMap[d.subscription.id]) || null);
+              if (!side) {
+                const ct = String(d.proposal.contract_type || "").toLowerCase();
+                if (ct === "digitover") side = "over";
+                else if (ct === "digitunder") side = "under";
+              }
+              if (side && d.subscription && d.subscription.id) subMap[d.subscription.id] = side;
+              if (side) setPay((p) => Object.assign({}, p, { [side]: { payout: d.proposal.payout, id: d.proposal.id } }));
+            }
+          };
+          ws.onclose = () => { if (alive) { setPay({ over: null, under: null }); schedule(); } };
+          ws.onerror = () => { try { ws && ws.close(); } catch (e) {} };
+        }
+        setPay({ over: null, under: null });
+        open();
+        return () => { alive = false; clearTimeout(retry); try { ws && ws.close(); } catch (e) {} };
+      }, [symbol, barrier, duration, stakeDeb]);
+      return pay;
+    }
+
+    /* ================= manual trade panel ================= */
+    function TradePanel(props) {
+      const symbol = props.symbol;
+      const barrier = props.barrier, setBarrier = props.setBarrier;
+      const [stakeRaw, setStakeRaw] = a.useState("10.00");
+      const [duration, setDuration] = a.useState(1);
+      const [busy, setBusy] = a.useState(false);
+      const [err, setErr] = a.useState(null);
+      const [result, setResult] = a.useState(null);
+      const [showLearn, setShowLearn] = a.useState(false);
+      const [bal, setBal] = a.useState(null);
+      const [version, setVersion] = a.useState(0);
+      a.useEffect(() => { setVersion(readToken() ? 1 : 0); }, []);
+      const pay = usePayouts(symbol, barrier, duration, stakeRaw);
+      const loggedIn = !!readToken() || version > 0;
+      const stakeNum = Math.max(0.35, Number(stakeRaw) || 10);
+
+      /* live balance for connected accounts */
+      a.useEffect(() => {
+        if (!loggedIn) { setBal(null); return; }
+        let alive = true, ws = null;
+        try { ws = new WebSocket(WS_URL); } catch (e) { return; }
+        ws.onmessage = (ev) => {
+          let d; try { d = JSON.parse(ev.data); } catch (e2) { return; }
+          if (d.authorize && alive) setBal({ v: d.authorize.balance, c: d.authorize.currency, id: d.authorize.loginid });
+        };
+        ws.onopen = () => { try { ws.send(JSON.stringify({ authorize: readToken() })); } catch (e2) {} };
+        return () => { alive = false; try { ws && ws.close(); } catch (e2) {} };
+      }, [loggedIn, result]);
+
+      async function login() {
+        try {
+          const u = await (0, x.arA)();
+          if (u) window.location.replace(u);
+        } catch (e) { setErr("Could not start Deriv login."); }
+      }
+      /* ONE manual action -> ONE contract. No loops, no automation. */
+      async function buy(side) {
+        const token = readToken();
+        if (!token) { setVersion(0); await login(); return; }
+        setBusy(true); setErr(null); setResult(null);
+        let ws = null;
+        const pending = new Map();
+        let seq = 0;
+        try {
+          ws = new WebSocket(WS_URL);
+          const call = (payload, ms) => new Promise((res, rej) => {
+            const id = ++seq;
+            payload.req_id = id;
+            const to = setTimeout(() => { pending.delete(id); rej(new Error("Request timed out")); }, ms || 15000);
+            pending.set(id, { res: (d) => { clearTimeout(to); res(d); }, rej: (e2) => { clearTimeout(to); rej(e2); } });
+            ws.send(JSON.stringify(payload));
+          });
+          ws.onmessage = (ev) => {
+            let d; try { d = JSON.parse(ev.data); } catch (e2) { return; }
+            if (d.req_id != null && pending.has(d.req_id)) {
+              const p = pending.get(d.req_id);
+              pending.delete(d.req_id);
+              d.error ? p.rej(new Error(d.error.message)) : p.res(d);
+            }
+          };
+          await new Promise((res, rej) => {
+            ws.onopen = () => res();
+            ws.onerror = () => rej(new Error("Could not connect to the trading endpoint."));
+          });
+          const auth = await call({ authorize: token });
+          const cur = (auth.authorize && auth.authorize.currency) || "USD";
+          const ctype = side === "over" ? "DIGITOVER" : "DIGITUNDER";
+          const prop = await call({
+            proposal: 1, amount: stakeNum, basis: "stake", contract_type: ctype,
+            barrier: String(barrier), currency: cur, duration: duration, duration_unit: "t",
+            underlying_symbol: symbol
+          });
+          const ask = prop.proposal.ask_price, pid = prop.proposal.id;
+          const buyRes = await call({ buy: pid, price: ask });
+          const b = buyRes.buy || {};
+          setResult({ side: side, cid: b.contract_id, payout: b.payout, cur: cur, barrier: barrier });
+          try { (0, m.N)("Contract bought — payout " + Number(b.payout || 0).toFixed(2) + " " + cur); } catch (e2) {}
+        } catch (e2) {
+          setErr(e2 && e2.message ? e2.message : "Trade failed.");
+        } finally {
+          try { ws && ws.close(); } catch (e2) {}
+          setBusy(false);
+        }
+      }
+
+      const fmtPay = (p) => p && p.payout != null ? Number(p.payout).toFixed(2) + " USD" : "loading…";
+      return (0, i.jsxs)("div", { className: "mt-card", "data-testid": "manual-trade", children: [
+        (0, i.jsxs)("button", { type: "button", className: "mt-learn", onClick: () => setShowLearn((v) => !v), "aria-expanded": showLearn, children: [
+          (0, i.jsx)("span", { children: "ℹ" }),
+          "Learn about this trade type"
+        ] }),
+        showLearn && (0, i.jsx)("div", { className: "mt-learnbox", children: "Over/Under (Digits): the contract wins if the last digit of the final tick is strictly above (Over) or below (Under) your chosen digit. Payout depends on the digit you pick — higher payout odds on rarer outcomes. Duration is measured in ticks." }),
+        (0, i.jsxs)("div", { className: "mt-chips", children: [
+          (0, i.jsx)("button", { type: "button", className: "mt-chip on", "aria-pressed": true, children: "↗ Over/Under" }),
+          (0, i.jsxs)("button", {
+            type: "button",
+            className: "mt-chip mt-chip--digit",
+            onClick: () => setBarrier((b) => (b + 1) % 10),
+            title: "Tap to cycle the digit — or tap a circle above",
+            children: ["Digit: ", (0, i.jsx)("b", { children: String(barrier) })]
+          })
+        ] }),
+        (0, i.jsxs)("div", { className: "mt-acct", children: [
+          (0, i.jsx)("span", { children: loggedIn ? (bal ? bal.id + " · balance" : "connected") : "not logged in" }),
+          (0, i.jsx)("b", { children: loggedIn ? (bal ? " " + Number(bal.v).toFixed(2) + " " + bal.c : "…") : "live payouts only" })
+        ] }),
+        (0, i.jsxs)("div", { className: "mt-vals", children: [
+          (0, i.jsxs)("div", { className: "mt-val", children: [
+            (0, i.jsxs)("div", { className: "mt-val__main", children: [
+              (0, i.jsx)("select", { value: String(duration), onChange: (e) => setDuration(Number(e.target.value)), "aria-label": "Duration in ticks", children: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (0, i.jsx)("option", { value: String(n), children: n + (n === 1 ? " tick" : " ticks") }, String(n))) }),
+              (0, i.jsx)("span", { className: "mt-val__cur", children: "▾" })
+            ] }),
+            (0, i.jsx)("span", { className: "mt-val__cap", children: "Duration" })
+          ] }),
+          (0, i.jsxs)("div", { className: "mt-val", children: [
+            (0, i.jsxs)("div", { className: "mt-val__main", children: [
+              (0, i.jsx)("input", { type: "number", min: "0.35", step: "0.35", value: stakeRaw, onChange: (e) => setStakeRaw(e.target.value), "aria-label": "Stake amount", placeholder: "10.00" }),
+              (0, i.jsx)("span", { className: "mt-val__cur", children: "USD" })
+            ] }),
+            (0, i.jsx)("span", { className: "mt-val__cap", children: "Stake" })
+          ] })
+        ] }),
+        (0, i.jsxs)("div", { className: "mt-buy", children: [
+          (0, i.jsxs)("button", { type: "button", className: "over", disabled: busy, onClick: () => buy("over"), children: [
+            (0, i.jsxs)("span", { className: "mt-buy__t", children: [(0, i.jsx)("em", { children: "▲" }), "Over"] }),
+            (0, i.jsxs)("span", { className: "mt-buy__p", children: [(0, i.jsx)("u", { children: "Payout" }), fmtPay(pay.over)] })
+          ] }),
+          (0, i.jsxs)("button", { type: "button", className: "under", disabled: busy, onClick: () => buy("under"), children: [
+            (0, i.jsxs)("span", { className: "mt-buy__t", children: [(0, i.jsx)("em", { children: "▼" }), "Under"] }),
+            (0, i.jsxs)("span", { className: "mt-buy__p", children: [(0, i.jsx)("u", { children: "Payout" }), fmtPay(pay.under)] })
+          ] })
+        ] }),
+        err && (0, i.jsx)("div", { className: "mt-err", children: err }),
+        result && (0, i.jsxs)("div", { className: "mt-result", children: [
+          (0, i.jsx)("span", { children: (result.side === "over" ? "Over" : "Under") + " " + result.barrier + " · contract #" + result.cid }),
+          (0, i.jsx)("span", { children: "payout " + Number(result.payout || 0).toFixed(2) + " " + result.cur })
+        ] })
+      ] });
+    }
+
+    /* ================= AI analysis (compact, below) ================= */
+    function AiPanel(props) {
+      const ana = props.ana, label = props.label, status = props.status;
+      if (!ana.ready && status !== "live" && status !== "offline") {
+        return (0, i.jsxs)("div", { className: "mt-card", children: [
+          (0, i.jsxs)("div", { className: "mt-ai__head", children: [(0, i.jsxs)("div", { className: "mt-ai__title", children: [(0, i.jsx)("span", { className: "mt-ai__mark", children: "✦" }), "AI Market Analysis"] })] }),
+          (0, i.jsxs)("div", { className: "mt-scan", children: [(0, i.jsx)("i", {}), " AI is scanning 120 candles…"] })
+        ] });
+      }
+      if (!ana.ready) return null;
+      return (0, i.jsxs)("div", { className: "mt-card", children: [
+        (0, i.jsxs)("div", { className: "mt-ai__head", children: [
+          (0, i.jsxs)("div", { className: "mt-ai__title", children: [(0, i.jsx)("span", { className: "mt-ai__mark", children: "✦" }), "AI Market Analysis", (0, i.jsx)("span", { className: "mt-badge", children: label })] }),
+          (0, i.jsx)("span", { className: "mt-badge", children: status === "live" ? "streaming" : status === "offline" ? "reconnecting" : "connecting" })
+        ] }),
+        (0, i.jsxs)("div", { className: "mt-ai__grid", children: [
+          (0, i.jsxs)("div", { className: "mt-verdict", children: [
+            (0, i.jsx)("div", { className: "mt-verdict__word " + ana.cls, children: ana.verdict }),
+            (0, i.jsx)("div", { className: "mt-verdict__meta", children: "score " + (ana.score >= 0 ? "+" : "") + ana.score.toFixed(0) + " · " + ana.confidence + "%" }),
+            (0, i.jsx)("div", { className: "mt-conf", children: (0, i.jsx)("i", { style: { width: ana.confidence + "%" } }) })
+          ] }),
+          (0, i.jsx)("div", { className: "mt-facts", children: ana.facts.map((f, idx) => (0, i.jsxs)("div", { className: "mt-fact", children: [
+            (0, i.jsxs)("span", { className: "mt-fact__l", children: [(0, i.jsx)("span", { className: "mt-fact__d" + (f.dir > 0 ? " up" : f.dir < 0 ? " down" : "") }), f.label] }),
+            (0, i.jsx)("span", { className: "mt-fact__v", children: f.val })
+          ] }, "f" + idx)) })
+        ] })
+      ] });
+    }
+
+    /* ================= page ================= */
+    const z = () => {
+      const [symbol, setSymbol] = a.useState("1HZ90V");
+      const [barrier, setBarrier] = a.useState(2);
+      const desk = useDesk(symbol);
+      const ana = a.useMemo(() => analyze(desk.candles, desk.price), [desk.candles, desk.price]);
+      const label = (SYMBOLS.find((s) => s.v === symbol) || {}).l || symbol;
+      a.useEffect(() => {
+        if (document.getElementById("mt-style")) return;
+        const el = document.createElement("style");
+        el.id = "mt-style";
+        el.textContent = CSS;
+        document.head.appendChild(el);
+      }, []);
+      const chg = a.useMemo(() => {
+        const cs = desk.candles.map((c) => Number(c.close)).filter((v) => isFinite(v));
+        if (cs.length < 2) return null;
+        const diff = cs[cs.length - 1] - cs[cs.length - 2];
+        return { diff: diff, pct: (diff / cs[cs.length - 2]) * 100 };
+      }, [desk.candles]);
+      const dotCls = desk.status === "live" ? " live" : desk.status === "offline" ? " off" : "";
+      const tabs = [
+        { k: "tv", l: "Trading View" },
+        { k: "mt", l: "Manual Trader" },
+        { k: "tu", l: "Tutorial" }
+      ];
+      return (0, i.jsxs)("div", { className: "mt-page", "data-testid": "manual-trader", children: [
+        (0, i.jsx)("div", { className: "mt-tabs", role: "tablist", "aria-label": "Trading modes", children: tabs.map((tb) => (0, i.jsx)("button", {
+          type: "button",
+          role: "tab",
+          "aria-selected": tb.k === "mt",
+          className: "mt-tab" + (tb.k === "mt" ? " on" : ""),
+          onClick: () => { if (tb.k !== "mt") try { (0, m.N)(tb.l + " arrives in a later release"); } catch (err) {} },
+          children: tb.l
+        }, tb.k)) }),
+        (0, i.jsxs)("div", { className: "mt-market", children: [
+          (0, i.jsx)("span", { className: "mt-market__ico", "aria-hidden": "true", children: "⇅" }),
+          (0, i.jsxs)("div", { className: "mt-market__body", children: [
+            (0, i.jsxs)("select", { className: "mt-select", value: symbol, onChange: (e) => setSymbol(e.target.value), "aria-label": "Market", children: SYMBOLS.map((sy) => (0, i.jsx)("option", { value: sy.v, children: sy.l }, sy.v)) }),
+            (0, i.jsxs)("div", { className: "mt-quote", children: [
+              (0, i.jsx)("span", { className: "mt-quote__dot" + dotCls }),
+              (0, i.jsx)("span", { className: "mt-quote__price", children: fmtPrice(desk.price, desk.pip) }),
+              chg && (0, i.jsxs)("span", { className: "mt-quote__chg " + (chg.diff >= 0 ? "up" : "down"), children: [
+                (chg.diff >= 0 ? "+" : "") + chg.diff.toFixed(3),
+                "  (", (chg.pct >= 0 ? "+" : "") + chg.pct.toFixed(2), "%)"
+              ] })
+            ] })
+          ] })
+        ] }),
+        (0, i.jsxs)("div", { className: "mt-card", children: [
+          (0, i.jsx)(DigitGrid, { prices: desk.prices, pip: desk.pip, selected: barrier, onSelect: setBarrier })
+        ] }),
+        (0, i.jsx)(TradePanel, { symbol: symbol, barrier: barrier, setBarrier: setBarrier }),
+        (0, i.jsx)(AiPanel, { ana: ana, label: label, status: desk.status }),
+        (0, i.jsx)("div", { className: "mt-note", children: "Digit probabilities are computed live from recent ticks; payouts stream from Deriv in real time. Each press of Over/Under sends exactly one trade request on your connected Deriv account. Not financial advice." })
+      ] });
+    };
+  }
+}]);
