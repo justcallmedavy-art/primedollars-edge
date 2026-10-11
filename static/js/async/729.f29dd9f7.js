@@ -119,9 +119,7 @@
 .mt-scan{display:flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;color:var(--text-less-prominent,#6e7288);padding:20px 4px}
 .mt-scan i{width:15px;height:15px;border-radius:50%;border:2.5px solid rgba(255,68,79,.25);border-top-color:#ff444f;animation:mt-spin2 .9s linear infinite;font-style:normal}
 @keyframes mt-spin2{to{transform:rotate(360deg)}}
-.mt-note{font-size:10.5px;color:var(--text-less-prominent,#8a8fa3);text-align:center;line-height:1.6;margin-top:4px}
-@media (min-width:640px){.mt-page{padding-top:20px}}
-`;
+.mt-note{font-size:10.5px;color:var(--text-less-prominent,#8a8fa3);text-align:center;line-height:1.6;margin-top:4px}@media (min-width:640px){.mt-page{padding-top:20px}} /* ================ floating AI button + dock ================ */ .mt-ai__headend{display:flex;align-items:center;gap:7px} .mt-fab{position:fixed;right:18px;bottom:18px;z-index:900;display:inline-flex;align-items:center;gap:9px;height:52px;padding:0 18px 0 13px;border:0;border-radius:999px;cursor:pointer;color:#fff;font-size:13.5px;font-weight:900;letter-spacing:.4px;background:linear-gradient(135deg,#ff5f68,#e1323c);box-shadow:0 12px 28px rgba(225,50,60,.38);transition:transform .18s ease,box-shadow .18s ease,background .18s ease} .mt-fab:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(225,50,60,.46)} .mt-fab:active{transform:translateY(0) scale(.98)} .mt-fab:focus-visible{outline:3px solid rgba(255,68,79,.35);outline-offset:2px} .mt-fab.on{background:#12141c;box-shadow:0 12px 28px rgba(18,20,28,.34)} .mt-fab__ico{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.22);font-size:13px;line-height:1} .mt-fab.on .mt-fab__ico{background:rgba(255,68,79,.2);color:#ff6b73} .mt-fab__txt{line-height:1} .mt-dock{position:fixed;right:18px;bottom:82px;z-index:900;width:min(336px,calc(100vw - 24px));max-height:min(72vh,540px);overflow:auto;overscroll-behavior:contain;padding:14px;border-radius:17px;border:1px solid var(--border-general,#e6e8f0);background:#fff;box-shadow:0 26px 64px rgba(16,18,28,.24);animation:mt-dockin .22s cubic-bezier(.2,.8,.2,1)} @keyframes mt-dockin{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:none}} .mt-dock__x{width:26px;height:26px;border-radius:9px;border:1px solid var(--border-general,#e6e8f0);background:#fff;color:var(--text-less-prominent,#6e7288);font-size:12px;font-weight:900;line-height:1;cursor:pointer} .mt-dock__x:hover{color:#ff444f;border-color:rgba(255,68,79,.4)} .mt-dock__price{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:2px 0 10px;padding:9px 11px;border-radius:11px;border:1px solid var(--border-general,#e6e8f0);background:#fbfbfe;font-size:11.5px} .mt-dock__pl{color:var(--text-less-prominent,#6e7288);font-weight:700} .mt-dock__pv{font-weight:900;font-variant-numeric:tabular-nums} @media (max-width:480px){.mt-fab{right:12px;bottom:12px;height:48px;padding:0 15px 0 11px}.mt-dock{right:12px;left:12px;bottom:70px;width:auto;max-height:66vh}} `;
 
     /* ================= helpers ================= */
     function readToken() {
@@ -518,12 +516,47 @@
           ] }, "f" + idx)) })
         ] })
       ] });
-    }
+    }      /* ================= floating AI dock ================= */
+      function AiDock(props) {
+        const ana = props.ana, label = props.label, status = props.status, price = props.price, pip = props.pip, onClose = props.onClose;
+        return (0, i.jsxs)("div", { className: "mt-dock", role: "dialog", "aria-label": "AI market analysis", children: [
+          (0, i.jsxs)("div", { className: "mt-ai__head", children: [
+            (0, i.jsxs)("div", { className: "mt-ai__title", children: [
+              (0, i.jsx)("span", { className: "mt-ai__mark", "aria-hidden": "true", children: "✦" }),
+              "AI Market Analysis",
+              (0, i.jsx)("span", { className: "mt-badge", children: label })
+            ] }),
+            (0, i.jsxs)("div", { className: "mt-ai__headend", children: [
+              (0, i.jsx)("span", { className: "mt-badge", children: status === "live" ? "streaming" : status === "offline" ? "reconnecting" : "connecting" }),
+              (0, i.jsx)("button", { type: "button", className: "mt-dock__x", "aria-label": "Close AI analysis", onClick: onClose, children: "✕" })
+            ] })
+          ] }),
+          price != null && (0, i.jsxs)("div", { className: "mt-dock__price", children: [
+            (0, i.jsx)("span", { className: "mt-dock__pl", children: "Last price" }),
+            (0, i.jsx)("span", { className: "mt-dock__pv", children: fmtPrice(price, pip) })
+          ] }),
+          ana.ready ? (0, i.jsxs)("div", { className: "mt-ai__grid", children: [
+            (0, i.jsxs)("div", { className: "mt-verdict", children: [
+              (0, i.jsx)("div", { className: "mt-verdict__word " + ana.cls, children: ana.verdict }),
+              (0, i.jsx)("div", { className: "mt-verdict__meta", children: "score " + (ana.score >= 0 ? "+" : "") + ana.score.toFixed(0) + " · " + ana.confidence + "%" }),
+              (0, i.jsx)("div", { className: "mt-conf", children: (0, i.jsx)("i", { style: { width: ana.confidence + "%" } }) })
+            ] }),
+            (0, i.jsx)("div", { className: "mt-facts", children: ana.facts.map((f, idx) => (0, i.jsxs)("div", { className: "mt-fact", children: [
+              (0, i.jsx)("span", { className: "mt-fact__l", children: [(0, i.jsx)("span", { className: "mt-fact__d" + (f.dir > 0 ? " up" : f.dir < 0 ? " down" : "") }), f.label] }),
+              (0, i.jsx)("span", { className: "mt-fact__v", children: f.val })
+            ] }, "d" + idx)) })
+          ] }) : (0, i.jsxs)("div", { className: "mt-scan", children: [
+            (0, i.jsx)("i", {}), " AI is scanning 120 candles…"
+          ] }),
+          (0, i.jsx)("div", { className: "mt-note", children: "Signals are computed on this device from live Deriv candles. Not financial advice." })
+        ] });
+      }
 
-    /* ================= page ================= */
+      /* ================= page ================= */
     const z = () => {
       const [symbol, setSymbol] = a.useState("1HZ90V");
       const [barrier, setBarrier] = a.useState(2);
+      const [fabOpen, setFabOpen] = a.useState(false);
       const desk = useDesk(symbol);
       const ana = a.useMemo(() => analyze(desk.candles, desk.price), [desk.candles, desk.price]);
       const label = (SYMBOLS.find((s) => s.v === symbol) || {}).l || symbol;
@@ -534,6 +567,12 @@
         el.textContent = CSS;
         document.head.appendChild(el);
       }, []);
+      a.useEffect(() => {
+        if (!fabOpen) return;
+        const onKey = (e) => { if (e.key === "Escape") setFabOpen(false); };
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+      }, [fabOpen]);
       const chg = a.useMemo(() => {
         const cs = desk.candles.map((c) => Number(c.close)).filter((v) => isFinite(v));
         if (cs.length < 2) return null;
@@ -574,6 +613,11 @@
         ] }),
         (0, i.jsx)(TradePanel, { symbol: symbol, barrier: barrier, setBarrier: setBarrier }),
         (0, i.jsx)(AiPanel, { ana: ana, label: label, status: desk.status }),
+        (0, i.jsxs)("button", { type: "button", className: "mt-fab" + (fabOpen ? " on" : ""), "aria-label": "AI market analysis", "aria-expanded": fabOpen, onClick: () => setFabOpen((v) => !v), children: [
+          (0, i.jsx)("span", { className: "mt-fab__ico", "aria-hidden": "true", children: "✦" }),
+          (0, i.jsx)("span", { className: "mt-fab__txt", children: "AI" })
+        ] }),
+        fabOpen && (0, i.jsx)(AiDock, { ana: ana, label: label, status: desk.status, price: desk.price, pip: desk.pip, onClose: () => setFabOpen(false) }),
         (0, i.jsx)("div", { className: "mt-note", children: "Digit probabilities are computed live from recent ticks; payouts stream from Deriv in real time. Each press of Over/Under sends exactly one trade request on your connected Deriv account. Not financial advice." })
       ] });
     };
