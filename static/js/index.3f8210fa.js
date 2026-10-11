@@ -75,4 +75,324 @@
                 py:${i.total_payout},\
                 lc:${i.lost_contracts},\
                 wc:${i.won_contracts},\
-                pr:${i.total_profit}`.replace(/\s/g,""),event:"dbot_run",run_id:o};r(s)}catch(e){console.warn("Error pushing run data to datalayer ",e)}},{init:e=>{if(!s){s=!0,setTimeout(()=>{!function(){var e,t,i;let o,s;e=window,t=document,e[i="dataLayer"]=e[i]||[],e[i].push({"gtm.start":new Date().getTime(),event:"gtm.js"}),o=t.getElementsByTagName("script")[0],(s=t.createElement("script")).defer=!0,s.src="https://www.googletagmanager.com/gtm.js?id=GTM-NF7884S",o.parentNode.insertBefore(s,o)}()},3e3);try{let{run_panel:t,transactions:i,client:s,common:r}=e;(0,n.reaction)(()=>t.is_running,()=>{t.is_running&&(clearTimeout(o),o=setTimeout(()=>{var e;a(null==s?void 0:s.loginid,null==r||null==(e=r.server_time)?void 0:e.unix(),null==i?void 0:i.statistics)},500))})}catch(e){console.warn("Error initializing GTM reactions ",e)}}},pushDataLayer:r,onTransactionClosed:e=>{r({event:"dbot_run_transaction",reference_id:(null==e?void 0:e.contract_id)??""})},onRunBot:a})},82215(e,t,i){"use strict";i.d(t,{Z:()=>l,c:()=>o});let o={TEXT:"text",VIDEO:"video",IMAGE:"image",BLOCK:"block",EXAMPLE:"example"},{TEXT:s,IMAGE:r,BLOCK:a,EXAMPLE:n}=o,l=e=>(window.__webpack_public_path__=e,{procedures_ifreturn:[{type:s},{type:a},{type:s},{type:n,example_id:"if-return"}],math_arithmetic:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],math_single:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],math_constrain:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"constrain"}],text_print:[{type:s},{type:a},{type:s}],text_prompt_ext:[{type:s},{type:a},{type:s}],tick_analysis:[{type:s},{type:a}],read_details:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],last_digit:[{type:s},{type:a}],read_ohlc:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"in_candle_list_read"}],read_ohlc_obj:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"read_candle_value"}],check_direction:[{type:s},{type:a},{type:s},{type:s},{type:s}],get_ohlc:[{type:s},{type:a},{type:s},{type:n,example_id:"get_candle"},{type:s}],ohlc:[{type:s},{type:a},{type:s},{type:n,example_id:"candle_list_1"}],ohlc_values:[{type:s},{type:a},{type:s},{type:n,example_id:"candle_list"}],is_candle_black:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/is_candle_black.jpeg`},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/is_candle_black_1.jpeg`},{type:s}],ohlc_values_in_list:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"candle_list_1"}],variables_gets:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],variables_set:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/create_variable.jpg`},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/set_variable.png`}],epoch:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"epoch"}],todatetime:[{type:s},{type:a},{type:s},{type:n,example_id:"todatetime"},{type:s}],totimestamp:[{type:s},{type:a},{type:s},{type:n,example_id:"totimestamp"},{type:s}],notify_telegram:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"notify_telegram"}],console:[{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],balance:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s}],sma_statement:[{type:s},{type:a},{type:s},{type:r,width:"60%",url:`${window.__webpack_public_path__}assets/media/sma_formula.png`},{type:s},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/sma_chart_1.png`},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/sma_chart_2.png`},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"sma_block_example"},{type:s},{type:s},{type:n,example_id:"sma_block_example_1"},{type:s},{type:s},{type:n,example_id:"sma_array"},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/sma_array_explanation.jpeg`}],trade_definition:[{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:a}],trade_definition_tradeoptions:[{type:s},{type:a}],trade_definition_multiplier:[{type:s},{type:s},{type:s},{type:s}],before_purchase:[{type:s},{type:a},{type:s}],during_purchase:[{type:s},{type:a},{type:s},{type:n,example_id:"sell_available"}],sell_at_market:[{type:s},{type:a},{type:s},{type:n,example_id:"sell_available"}],after_purchase:[{type:s},{type:a},{type:s}],trade_again:[{type:s},{type:a},{type:s},{type:n,example_id:"trade_again"}],contract_check_result:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"check_result"}],sell_price:[{type:s},{type:a},{type:s},{type:n,example_id:"sell_pl"}],controls_if:[{type:s},{type:a},{type:s},{type:n,example_id:"controls_if"},{type:s},{type:n,example_id:"compare_logic"},{type:n,example_id:"compare_logic_1"}],logic_operation:[{type:s},{type:a},{type:s},{type:s},{type:r,width:"40%",url:`${window.__webpack_public_path__}assets/media/logic.png`}],controls_whileUntil:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"repeat_while"},{type:s},{type:n,example_id:"repeat_until"}],controls_for:[{type:s},{type:a},{type:s},{type:n,example_id:"controls_for"},{type:s},{type:s}],controls_forEach:[{type:s},{type:a},{type:s},{type:n,example_id:"controls_forEach"},{type:s},{type:s},{type:s}],controls_flow_statements:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"break_out"},{type:s},{type:n,example_id:"continue"}]})},18954(e,t,i){"use strict";i.d(t,{k:()=>s});let o=e=>!!e&&"undefined"!==e,s=()=>o(void 0)&&o(void 0)&&o(void 0)},49887(e,t,i){"use strict";i.d(t,{B:()=>s,I:()=>o});let o=()=>!1,s="/bot/preview"},35581(e,t,i){"use strict";i.d(t,{C:()=>o});let o=[{code:"EN",displayName:"English"},{code:"AR",displayName:"العربية"},{code:"BN",displayName:"বাংলা"},{code:"DE",displayName:"Deutsch"},{code:"ES",displayName:"Espa\xf1ol"},{code:"FR",displayName:"Fran\xe7ais"},{code:"IT",displayName:"Italiano"},{code:"SW",displayName:"Kiswahili"},{code:"KM",displayName:"ខ្មែរ"},{code:"KO",displayName:"한국어"},{code:"MN",displayName:"Монгол"},{code:"PL",displayName:"Polski"},{code:"PT",displayName:"Portugu\xeas"},{code:"RU",displayName:"Русский"},{code:"SI",displayName:"සිංහල"},{code:"TA",displayName:"தமிழ்"},{code:"TR",displayName:"T\xfcrk\xe7e"},{code:"VI",displayName:"Tiếng Việt"},{code:"ZH_CN",displayName:"简体中文"},{code:"ZH_TW",displayName:"繁體中文"}].filter(e=>["EN","ES","FR","PT","AR","IT","RU","VI","ZH_CN","ZH_TW","DE","BN","SW","KO","PL","SI","TA","MN"].includes(e.code))},42643(e,t,i){"use strict";i.d(t,{Gf:()=>r,PL:()=>s,lk:()=>a});let o=()=>JSON.parse(localStorage.getItem("dbot_settings")),s=e=>{let t=o();return t?t[e]:null},r=(e,t)=>{let i=o()||{};i[e]=t,localStorage.setItem("dbot_settings",JSON.stringify(i))},a=e=>{let t=o()||{};delete t[e],localStorage.setItem("dbot_settings",JSON.stringify(t))}},2351(e,t,i){"use strict";i.d(t,{qX:()=>n,rE:()=>a,sf:()=>r});var o=i(95093),s=i.n(o);let r=e=>{if(!e||!s()(e).isValid())return s()().utc();if(s().isMoment(e)&&e.isValid()&&e.isUTC())return e;if("number"==typeof e)return s().unix(e).utc();return s().utc(e)},a="YYYY-MM-DD HH:mm:ss [GMT]",n="YYYY-MM-DD HH:mm:ss Z"},39706(e,t,i){"use strict";i.d(t,{I:()=>s});var o=i(74848);let s=(0,i(96540).memo)(e=>{let{icon:t,...i}=e;return(0,o.jsx)("div",{className:"dummy-icon",...i,children:(0,o.jsx)("img",{src:`assets/icons/${t}.svg`,alt:t,onError:e=>{e.target.src="assets/icons/IcDashboard.svg"}})})})},75490(e,t,i){"use strict";i.d(t,{f:()=>r});var o=i(78155),s=i(79678);let r=e=>{try{let t=window.location.origin+window.location.pathname,i=new URL(e);i.searchParams.set("redirect",t);let r=new URLSearchParams(window.location.search).get("account_id"),a=localStorage.getItem("active_loginid"),n=r||a;n&&(i.searchParams.set("account_id",n),i.searchParams.set("account_type",(0,o.L5)(n)?"demo":"real"));let l=(0,s.dn)();return l&&i.searchParams.set("lang",l),i.toString()}catch(t){return console.error("Error generating URL with redirect:",t),e}}},91649(e){"use strict";e.exports=JSON.parse('{"brand_name":"PrimeDollarsEdge","brand_domain":"primedollarsedge.com","brand_hostname":{"staging":"staging.primedollarsedge.com/dashboard","production":"primedollarsedge.com"},"domain_name":"primedollarsedge.com","colors":{"primary":"#ff444f","secondary":"#64748b","tertiary":"#7C5CFC","success":"#22C55E","danger":"#ef4444","warning":"#f59e0b","info":"#0ea5e9","neutral":"#6b7280","black":"#0F1B2D","white":"#ffffff","grey":{"50":"#f8fafc","100":"#f1f5f9","200":"#e2e8f0","300":"#cbd5e1","400":"#94a3b8","500":"#64748b","600":"#475569","700":"#334155","800":"#1e293b","900":"#0f172a"}},"typography":{"font_family":{"primary":"Inter","secondary":"Georgia, \'Times New Roman\', Times, serif","monospace":"\'Courier New\', Courier, monospace"},"font_sizes":{"xs":"0.75rem","sm":"0.875rem","base":"1rem","lg":"1.125rem","xl":"1.25rem","2xl":"1.5rem","3xl":"1.875rem","4xl":"2.25rem"}},"color_variants":{"light_variants":[100,200,300,400,500],"dark_variants":[600,700,800,900],"opacity_variants":[10,20,30,40,50,60,70,80,90]},"theme_config":{"enable_dynamic_themes":true,"auto_generate_variants":true,"css_variable_prefix":"--brand"},"platform":{"name":"PrimeDollars Edge","footer":{"enable_language_settings":false,"enable_theme_toggle":true},"hostname":{"production":{"com":"primedollarsedge.com"},"staging":{"com":"staging-primedollarsedge.com"}},"auth2_url":{"production":"https://auth.deriv.com/oauth2/","staging":"https://staging-auth.deriv.com/oauth2/"},"derivws":{"url":{"staging":"https://staging-api.derivws.com/trading/v1/","production":"https://api.derivws.com/trading/v1/"},"directories":{"options":"options/","derivatives":"derivatives/"}}}}')}},c={};function d(e){var t=c[e];if(void 0!==t)return t.exports;var i=c[e]={id:e,loaded:!1,exports:{}};return l[e].call(i.exports,i,i.exports,d),i.loaded=!0,i.exports}if(d.m=l,d.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return d.d(t,{a:t}),t},t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,d.t=function(i,o){if(1&o&&(i=this(i)),8&o||"object"==typeof i&&i&&(4&o&&i.__esModule||16&o&&"function"==typeof i.then))return i;var s=Object.create(null);d.r(s);var r={};e=e||[null,t({}),t([]),t(t)];for(var a=2&o&&i;("object"==typeof a||"function"==typeof a)&&!~e.indexOf(a);a=t(a))Object.getOwnPropertyNames(a).forEach(e=>{r[e]=()=>i[e]});return r.default=()=>i,d.d(s,r),s},d.d=(e,t)=>{for(var i in t)d.o(t,i)&&!d.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},d.f={},d.e=e=>Promise.all(Object.keys(d.f).reduce((t,i)=>(d.f[i](e,t),t),[])),d.hmd=e=>((e=Object.create(e)).children||(e.children=[]),Object.defineProperty(e,"exports",{enumerable:!0,set:()=>{throw Error("ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: "+e.id)}}),e),d.u=e=>"static/js/async/"+(({113:"accumulators_reverse_dalembert-xml",212:"oscars_grind-xml",22:"accumulators_martingale-xml",230:"oscars_grind_max-stake-xml",264:"reverse_dalembert-xml",3:"accumulators_dalembert_on_stat_reset-xml",432:"accumulators_dalembert-xml",489:"accumulators_martingale_on_stat_reset-xml",561:"accumulators_reverse_martingale-xml",588:"dalembert_max-stake-xml",603:"1_3_2_6-xml",630:"dalembert-xml",668:"martingale-xml",790:"accumulators_reverse_martingale_on_stat_reset-xml",811:"reverse_martingale-xml",822:"martingale_max-stake-xml",862:"dbot-collection",870:"accumulators_reverse_dalembert_on_stat_reset-xml"})[e]||e)+"."+({113:"be8b7dd3",207:"61b6f720",212:"df938ae3",22:"e49bc9df",230:"4a2e515a",246:"c4031532",264:"0bd3fd60",280:"88d27eeb",289:"a3da3827",3:"4838ce75",308:"f11dfd2c",312:"8ec0ba8c",341:"6b81c977",385:"fa23af34",432:"8e4148c8",45:"b21df275",489:"36deb535",500:"ad1748f4",511:"c821ca05",561:"bdd7d27b",571:"e47f5c83",588:"fbab5951",603:"6913e05a",630:"549d9d49",668:"7366b5b5",674:"5be1150d",675:"0e965c0e",729:"f29dd9f7",776:"a30c09ea",790:"7e73b030",811:"53d56847",822:"58aa99a9",850:"54dfe02f",862:"4b6465f5",866:"80dac8bf",870:"acd10afb",883:"82692c3f",917:"db904dae",973:"a305d64c"})[e]+".js",d.miniCssF=e=>"static/css/async/"+e+"."+({207:"040a43a2",246:"fcef4e09",308:"136ae15a",312:"03e82882",45:"9bf8263b",674:"db616465",675:"0806ceb3",729:"db616465",861:"76d9635b",866:"b8d51397",917:"b79d430f",973:"1f73b129"})[e]+".css",d.g=(()=>{if("object"==typeof globalThis)return globalThis;try{return this||Function("return this")()}catch(e){if("object"==typeof window)return window}})(),d.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i={},o="my-trading-bot:",d.l=function(e,t,s,r){if(i[e])return void i[e].push(t);if(void 0!==s)for(var a,n,l=document.getElementsByTagName("script"),c=0;c<l.length;c++){var u=l[c];if(u.getAttribute("src")==e||u.getAttribute("data-rspack")==o+s){a=u;break}}a||(n=!0,(a=document.createElement("script")).timeout=120,d.nc&&a.setAttribute("nonce",d.nc),a.setAttribute("data-rspack",o+s),a.src=e),i[e]=[t];var h=function(t,o){a.onerror=a.onload=null,clearTimeout(p);var s=i[e];if(delete i[e],a.parentNode&&a.parentNode.removeChild(a),s&&s.forEach(function(e){return e(o)}),t)return t(o)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=h.bind(null,a.onerror),a.onload=h.bind(null,a.onload),n&&document.head.appendChild(a)},d.r=e=>{"u">typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},d.nmd=e=>(e.paths=[],e.children||(e.children=[]),e),s=[],d.O=(e,t,i,o)=>{if(t){o=o||0;for(var r=s.length;r>0&&s[r-1][2]>o;r--)s[r]=s[r-1];s[r]=[t,i,o];return}for(var a=1/0,r=0;r<s.length;r++){for(var[t,i,o]=s[r],n=!0,l=0;l<t.length;l++)(!1&o||a>=o)&&Object.keys(d.O).every(e=>d.O[e](t[l]))?t.splice(l--,1):(n=!1,o<a&&(a=o));if(n){s.splice(r--,1);var c=i();void 0!==c&&(e=c)}}return e},d.p="/","u">typeof document){var u=function(e,t,i,o,s){var r=document.createElement("link");return r.rel="stylesheet",r.type="text/css",d.nc&&(r.nonce=d.nc),r.href=t,r.onerror=r.onload=function(i){if(r.onerror=r.onload=null,"load"===i.type)o();else{var a=i&&("load"===i.type?"missing":i.type),n=i&&i.target&&i.target.href||t,l=Error("Loading CSS chunk "+e+" failed.\\n("+n+")");l.code="CSS_CHUNK_LOAD_FAILED",l.type=a,l.request=n,r.parentNode&&r.parentNode.removeChild(r),s(l)}},i?i.parentNode.insertBefore(r,i.nextSibling):document.head.appendChild(r),r},h=function(e,t){for(var i=document.getElementsByTagName("link"),o=0;o<i.length;o++){var s=i[o],r=s.getAttribute("data-href")||s.getAttribute("href");if(r&&(r=r.split("?")[0]),"stylesheet"===s.rel&&(r===e||r===t))return s}for(var a=document.getElementsByTagName("style"),o=0;o<a.length;o++){var s=a[o],r=s.getAttribute("data-href");if(r===e||r===t)return s}},p={410:0};d.f.miniCss=function(e,t){if(p[e])t.push(p[e]);else 0!==p[e]&&({207:1,246:1,308:1,312:1,45:1,674:1,675:1,729:1,861:1,866:1,917:1,973:1})[e]&&t.push(p[e]=new Promise(function(t,i){var o=d.miniCssF(e),s=d.p+o;if(h(o,s))return t();u(e,s,null,t,i)}).then(function(){p[e]=0},function(t){throw delete p[e],t}))}}r={410:0},d.f.j=function(e,t){var i=d.o(r,e)?r[e]:void 0;if(0!==i)if(i)t.push(i[2]);else if(861!=e){var o=new Promise((t,o)=>i=r[e]=[t,o]);t.push(i[2]=o);var s=d.p+d.u(e),a=Error();d.l(s,function(t){if(d.o(r,e)&&(0!==(i=r[e])&&(r[e]=void 0),i)){var o=t&&("load"===t.type?"missing":t.type),s=t&&t.target&&t.target.src;a.message="Loading chunk "+e+" failed.\n("+o+": "+s+")",a.name="ChunkLoadError",a.type=o,a.request=s,i[1](a)}},"chunk-"+e,e)}else r[e]=0},d.O.j=e=>0===r[e],a=(e,t)=>{var i,o,[s,a,n]=t,l=0;if(s.some(e=>0!==r[e])){for(i in a)d.o(a,i)&&(d.m[i]=a[i]);if(n)var c=n(d)}for(e&&e(t);l<s.length;l++)o=s[l],d.o(r,o)&&r[o]&&r[o][0](),r[o]=0;return d.O(c)},(n=self.webpackChunkmy_trading_bot=self.webpackChunkmy_trading_bot||[]).forEach(a.bind(null,0)),n.push=a.bind(null,n.push.bind(n));var g=d.O(void 0,["783","535","765"],()=>d(15872));g=d.O(g)})();
+                pr:${i.total_profit}`.replace(/\s/g,""),event:"dbot_run",run_id:o};r(s)}catch(e){console.warn("Error pushing run data to datalayer ",e)}},{init:e=>{if(!s){s=!0,setTimeout(()=>{!function(){var e,t,i;let o,s;e=window,t=document,e[i="dataLayer"]=e[i]||[],e[i].push({"gtm.start":new Date().getTime(),event:"gtm.js"}),o=t.getElementsByTagName("script")[0],(s=t.createElement("script")).defer=!0,s.src="https://www.googletagmanager.com/gtm.js?id=GTM-NF7884S",o.parentNode.insertBefore(s,o)}()},3e3);try{let{run_panel:t,transactions:i,client:s,common:r}=e;(0,n.reaction)(()=>t.is_running,()=>{t.is_running&&(clearTimeout(o),o=setTimeout(()=>{var e;a(null==s?void 0:s.loginid,null==r||null==(e=r.server_time)?void 0:e.unix(),null==i?void 0:i.statistics)},500))})}catch(e){console.warn("Error initializing GTM reactions ",e)}}},pushDataLayer:r,onTransactionClosed:e=>{r({event:"dbot_run_transaction",reference_id:(null==e?void 0:e.contract_id)??""})},onRunBot:a})},82215(e,t,i){"use strict";i.d(t,{Z:()=>l,c:()=>o});let o={TEXT:"text",VIDEO:"video",IMAGE:"image",BLOCK:"block",EXAMPLE:"example"},{TEXT:s,IMAGE:r,BLOCK:a,EXAMPLE:n}=o,l=e=>(window.__webpack_public_path__=e,{procedures_ifreturn:[{type:s},{type:a},{type:s},{type:n,example_id:"if-return"}],math_arithmetic:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],math_single:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],math_constrain:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"constrain"}],text_print:[{type:s},{type:a},{type:s}],text_prompt_ext:[{type:s},{type:a},{type:s}],tick_analysis:[{type:s},{type:a}],read_details:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],last_digit:[{type:s},{type:a}],read_ohlc:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"in_candle_list_read"}],read_ohlc_obj:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"read_candle_value"}],check_direction:[{type:s},{type:a},{type:s},{type:s},{type:s}],get_ohlc:[{type:s},{type:a},{type:s},{type:n,example_id:"get_candle"},{type:s}],ohlc:[{type:s},{type:a},{type:s},{type:n,example_id:"candle_list_1"}],ohlc_values:[{type:s},{type:a},{type:s},{type:n,example_id:"candle_list"}],is_candle_black:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/is_candle_black.jpeg`},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/is_candle_black_1.jpeg`},{type:s}],ohlc_values_in_list:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"candle_list_1"}],variables_gets:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],variables_set:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/create_variable.jpg`},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/set_variable.png`}],epoch:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"epoch"}],todatetime:[{type:s},{type:a},{type:s},{type:n,example_id:"todatetime"},{type:s}],totimestamp:[{type:s},{type:a},{type:s},{type:n,example_id:"totimestamp"},{type:s}],notify_telegram:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"notify_telegram"}],console:[{type:s},{type:s},{type:s},{type:s},{type:s},{type:s}],balance:[{type:s},{type:a},{type:s},{type:s},{type:s},{type:s},{type:s}],sma_statement:[{type:s},{type:a},{type:s},{type:r,width:"60%",url:`${window.__webpack_public_path__}assets/media/sma_formula.png`},{type:s},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/sma_chart_1.png`},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/sma_chart_2.png`},{type:s},{type:s},{type:s},{type:s},{type:s},{type:n,example_id:"sma_block_example"},{type:s},{type:s},{type:n,example_id:"sma_block_example_1"},{type:s},{type:s},{type:n,example_id:"sma_array"},{type:s},{type:s},{type:s},{type:r,width:"100%",url:`${window.__webpack_public_path__}assets/media/sma_array_explanation.jpeg`}],trade_definition:[{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:s},{type:a}],trade_definition_tradeoptions:[{type:s},{type:a}],trade_definition_multiplier:[{type:s},{type:s},{type:s},{type:s}],before_purchase:[{type:s},{type:a},{type:s}],during_purchase:[{type:s},{type:a},{type:s},{type:n,example_id:"sell_available"}],sell_at_market:[{type:s},{type:a},{type:s},{type:n,example_id:"sell_available"}],after_purchase:[{type:s},{type:a},{type:s}],trade_again:[{type:s},{type:a},{type:s},{type:n,example_id:"trade_again"}],contract_check_result:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"check_result"}],sell_price:[{type:s},{type:a},{type:s},{type:n,example_id:"sell_pl"}],controls_if:[{type:s},{type:a},{type:s},{type:n,example_id:"controls_if"},{type:s},{type:n,example_id:"compare_logic"},{type:n,example_id:"compare_logic_1"}],logic_operation:[{type:s},{type:a},{type:s},{type:s},{type:r,width:"40%",url:`${window.__webpack_public_path__}assets/media/logic.png`}],controls_whileUntil:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"repeat_while"},{type:s},{type:n,example_id:"repeat_until"}],controls_for:[{type:s},{type:a},{type:s},{type:n,example_id:"controls_for"},{type:s},{type:s}],controls_forEach:[{type:s},{type:a},{type:s},{type:n,example_id:"controls_forEach"},{type:s},{type:s},{type:s}],controls_flow_statements:[{type:s},{type:a},{type:s},{type:s},{type:n,example_id:"break_out"},{type:s},{type:n,example_id:"continue"}]})},18954(e,t,i){"use strict";i.d(t,{k:()=>s});let o=e=>!!e&&"undefined"!==e,s=()=>o(void 0)&&o(void 0)&&o(void 0)},49887(e,t,i){"use strict";i.d(t,{B:()=>s,I:()=>o});let o=()=>!1,s="/bot/preview"},35581(e,t,i){"use strict";i.d(t,{C:()=>o});let o=[{code:"EN",displayName:"English"},{code:"AR",displayName:"العربية"},{code:"BN",displayName:"বাংলা"},{code:"DE",displayName:"Deutsch"},{code:"ES",displayName:"Espa\xf1ol"},{code:"FR",displayName:"Fran\xe7ais"},{code:"IT",displayName:"Italiano"},{code:"SW",displayName:"Kiswahili"},{code:"KM",displayName:"ខ្មែរ"},{code:"KO",displayName:"한국어"},{code:"MN",displayName:"Монгол"},{code:"PL",displayName:"Polski"},{code:"PT",displayName:"Portugu\xeas"},{code:"RU",displayName:"Русский"},{code:"SI",displayName:"සිංහල"},{code:"TA",displayName:"தமிழ்"},{code:"TR",displayName:"T\xfcrk\xe7e"},{code:"VI",displayName:"Tiếng Việt"},{code:"ZH_CN",displayName:"简体中文"},{code:"ZH_TW",displayName:"繁體中文"}].filter(e=>["EN","ES","FR","PT","AR","IT","RU","VI","ZH_CN","ZH_TW","DE","BN","SW","KO","PL","SI","TA","MN"].includes(e.code))},42643(e,t,i){"use strict";i.d(t,{Gf:()=>r,PL:()=>s,lk:()=>a});let o=()=>JSON.parse(localStorage.getItem("dbot_settings")),s=e=>{let t=o();return t?t[e]:null},r=(e,t)=>{let i=o()||{};i[e]=t,localStorage.setItem("dbot_settings",JSON.stringify(i))},a=e=>{let t=o()||{};delete t[e],localStorage.setItem("dbot_settings",JSON.stringify(t))}},2351(e,t,i){"use strict";i.d(t,{qX:()=>n,rE:()=>a,sf:()=>r});var o=i(95093),s=i.n(o);let r=e=>{if(!e||!s()(e).isValid())return s()().utc();if(s().isMoment(e)&&e.isValid()&&e.isUTC())return e;if("number"==typeof e)return s().unix(e).utc();return s().utc(e)},a="YYYY-MM-DD HH:mm:ss [GMT]",n="YYYY-MM-DD HH:mm:ss Z"},39706(e,t,i){"use strict";i.d(t,{I:()=>s});var o=i(74848);let s=(0,i(96540).memo)(e=>{let{icon:t,...i}=e;return(0,o.jsx)("div",{className:"dummy-icon",...i,children:(0,o.jsx)("img",{src:`assets/icons/${t}.svg`,alt:t,onError:e=>{e.target.src="assets/icons/IcDashboard.svg"}})})})},75490(e,t,i){"use strict";i.d(t,{f:()=>r});var o=i(78155),s=i(79678);let r=e=>{try{let t=window.location.origin+window.location.pathname,i=new URL(e);i.searchParams.set("redirect",t);let r=new URLSearchParams(window.location.search).get("account_id"),a=localStorage.getItem("active_loginid"),n=r||a;n&&(i.searchParams.set("account_id",n),i.searchParams.set("account_type",(0,o.L5)(n)?"demo":"real"));let l=(0,s.dn)();return l&&i.searchParams.set("lang",l),i.toString()}catch(t){return console.error("Error generating URL with redirect:",t),e}}},91649(e){"use strict";e.exports=JSON.parse('{"brand_name":"PrimeDollarsEdge","brand_domain":"primedollarsedge.com","brand_hostname":{"staging":"staging.primedollarsedge.com/dashboard","production":"primedollarsedge.com"},"domain_name":"primedollarsedge.com","colors":{"primary":"#ff444f","secondary":"#64748b","tertiary":"#7C5CFC","success":"#22C55E","danger":"#ef4444","warning":"#f59e0b","info":"#0ea5e9","neutral":"#6b7280","black":"#0F1B2D","white":"#ffffff","grey":{"50":"#f8fafc","100":"#f1f5f9","200":"#e2e8f0","300":"#cbd5e1","400":"#94a3b8","500":"#64748b","600":"#475569","700":"#334155","800":"#1e293b","900":"#0f172a"}},"typography":{"font_family":{"primary":"Inter","secondary":"Georgia, \'Times New Roman\', Times, serif","monospace":"\'Courier New\', Courier, monospace"},"font_sizes":{"xs":"0.75rem","sm":"0.875rem","base":"1rem","lg":"1.125rem","xl":"1.25rem","2xl":"1.5rem","3xl":"1.875rem","4xl":"2.25rem"}},"color_variants":{"light_variants":[100,200,300,400,500],"dark_variants":[600,700,800,900],"opacity_variants":[10,20,30,40,50,60,70,80,90]},"theme_config":{"enable_dynamic_themes":true,"auto_generate_variants":true,"css_variable_prefix":"--brand"},"platform":{"name":"PrimeDollars Edge","footer":{"enable_language_settings":false,"enable_theme_toggle":true},"hostname":{"production":{"com":"primedollarsedge.com"},"staging":{"com":"staging-primedollarsedge.com"}},"auth2_url":{"production":"https://auth.deriv.com/oauth2/","staging":"https://staging-auth.deriv.com/oauth2/"},"derivws":{"url":{"staging":"https://staging-api.derivws.com/trading/v1/","production":"https://api.derivws.com/trading/v1/"},"directories":{"options":"options/","derivatives":"derivatives/"}}}}')}},c={};function d(e){var t=c[e];if(void 0!==t)return t.exports;var i=c[e]={id:e,loaded:!1,exports:{}};return l[e].call(i.exports,i,i.exports,d),i.loaded=!0,i.exports}if(d.m=l,d.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return d.d(t,{a:t}),t},t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,d.t=function(i,o){if(1&o&&(i=this(i)),8&o||"object"==typeof i&&i&&(4&o&&i.__esModule||16&o&&"function"==typeof i.then))return i;var s=Object.create(null);d.r(s);var r={};e=e||[null,t({}),t([]),t(t)];for(var a=2&o&&i;("object"==typeof a||"function"==typeof a)&&!~e.indexOf(a);a=t(a))Object.getOwnPropertyNames(a).forEach(e=>{r[e]=()=>i[e]});return r.default=()=>i,d.d(s,r),s},d.d=(e,t)=>{for(var i in t)d.o(t,i)&&!d.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},d.f={},d.e=e=>Promise.all(Object.keys(d.f).reduce((t,i)=>(d.f[i](e,t),t),[])),d.hmd=e=>((e=Object.create(e)).children||(e.children=[]),Object.defineProperty(e,"exports",{enumerable:!0,set:()=>{throw Error("ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: "+e.id)}}),e),d.u=e=>"static/js/async/"+(({113:"accumulators_reverse_dalembert-xml",212:"oscars_grind-xml",22:"accumulators_martingale-xml",230:"oscars_grind_max-stake-xml",264:"reverse_dalembert-xml",3:"accumulators_dalembert_on_stat_reset-xml",432:"accumulators_dalembert-xml",489:"accumulators_martingale_on_stat_reset-xml",561:"accumulators_reverse_martingale-xml",588:"dalembert_max-stake-xml",603:"1_3_2_6-xml",630:"dalembert-xml",668:"martingale-xml",790:"accumulators_reverse_martingale_on_stat_reset-xml",811:"reverse_martingale-xml",822:"martingale_max-stake-xml",862:"dbot-collection",870:"accumulators_reverse_dalembert_on_stat_reset-xml"})[e]||e)+"."+({113:"be8b7dd3",207:"61b6f720",212:"df938ae3",22:"e49bc9df",230:"4a2e515a",246:"c4031532",264:"0bd3fd60",280:"88d27eeb",289:"a3da3827",3:"4838ce75",308:"f11dfd2c",312:"8ec0ba8c",341:"6b81c977",385:"fa23af34",432:"8e4148c8",45:"b21df275",489:"36deb535",500:"ad1748f4",511:"c821ca05",561:"bdd7d27b",571:"e47f5c83",588:"fbab5951",603:"6913e05a",630:"549d9d49",668:"7366b5b5",674:"5be1150d",675:"0e965c0e",729:"f29dd9f7",776:"a30c09ea",790:"7e73b030",811:"53d56847",822:"58aa99a9",850:"54dfe02f",862:"4b6465f5",866:"80dac8bf",870:"acd10afb",883:"82692c3f",917:"db904dae",973:"a305d64c"})[e]+".js",d.miniCssF=e=>"static/css/async/"+e+"."+({207:"040a43a2",246:"fcef4e09",308:"136ae15a",312:"03e82882",45:"9bf8263b",674:"db616465",675:"0806ceb3",729:"db616465",861:"76d9635b",866:"b8d51397",917:"b79d430f",973:"1f73b129"})[e]+".css",d.g=(()=>{if("object"==typeof globalThis)return globalThis;try{return this||Function("return this")()}catch(e){if("object"==typeof window)return window}})(),d.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i={},o="my-trading-bot:",d.l=function(e,t,s,r){if(i[e])return void i[e].push(t);if(void 0!==s)for(var a,n,l=document.getElementsByTagName("script"),c=0;c<l.length;c++){var u=l[c];if(u.getAttribute("src")==e||u.getAttribute("data-rspack")==o+s){a=u;break}}a||(n=!0,(a=document.createElement("script")).timeout=120,d.nc&&a.setAttribute("nonce",d.nc),a.setAttribute("data-rspack",o+s),a.src=e),i[e]=[t];var h=function(t,o){a.onerror=a.onload=null,clearTimeout(p);var s=i[e];if(delete i[e],a.parentNode&&a.parentNode.removeChild(a),s&&s.forEach(function(e){return e(o)}),t)return t(o)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=h.bind(null,a.onerror),a.onload=h.bind(null,a.onload),n&&document.head.appendChild(a)},d.r=e=>{"u">typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},d.nmd=e=>(e.paths=[],e.children||(e.children=[]),e),s=[],d.O=(e,t,i,o)=>{if(t){o=o||0;for(var r=s.length;r>0&&s[r-1][2]>o;r--)s[r]=s[r-1];s[r]=[t,i,o];return}for(var a=1/0,r=0;r<s.length;r++){for(var[t,i,o]=s[r],n=!0,l=0;l<t.length;l++)(!1&o||a>=o)&&Object.keys(d.O).every(e=>d.O[e](t[l]))?t.splice(l--,1):(n=!1,o<a&&(a=o));if(n){s.splice(r--,1);var c=i();void 0!==c&&(e=c)}}return e},d.p="/","u">typeof document){var u=function(e,t,i,o,s){var r=document.createElement("link");return r.rel="stylesheet",r.type="text/css",d.nc&&(r.nonce=d.nc),r.href=t,r.onerror=r.onload=function(i){if(r.onerror=r.onload=null,"load"===i.type)o();else{var a=i&&("load"===i.type?"missing":i.type),n=i&&i.target&&i.target.href||t,l=Error("Loading CSS chunk "+e+" failed.\\n("+n+")");l.code="CSS_CHUNK_LOAD_FAILED",l.type=a,l.request=n,r.parentNode&&r.parentNode.removeChild(r),s(l)}},i?i.parentNode.insertBefore(r,i.nextSibling):document.head.appendChild(r),r},h=function(e,t){for(var i=document.getElementsByTagName("link"),o=0;o<i.length;o++){var s=i[o],r=s.getAttribute("data-href")||s.getAttribute("href");if(r&&(r=r.split("?")[0]),"stylesheet"===s.rel&&(r===e||r===t))return s}for(var a=document.getElementsByTagName("style"),o=0;o<a.length;o++){var s=a[o],r=s.getAttribute("data-href");if(r===e||r===t)return s}},p={410:0};d.f.miniCss=function(e,t){if(p[e])t.push(p[e]);else 0!==p[e]&&({207:1,246:1,308:1,312:1,45:1,674:1,675:1,729:1,861:1,866:1,917:1,973:1})[e]&&t.push(p[e]=new Promise(function(t,i){var o=d.miniCssF(e),s=d.p+o;if(h(o,s))return t();u(e,s,null,t,i)}).then(function(){p[e]=0},function(t){throw delete p[e],t}))}}r={410:0},d.f.j=function(e,t){var i=d.o(r,e)?r[e]:void 0;if(0!==i)if(i)t.push(i[2]);else if(861!=e){var o=new Promise((t,o)=>i=r[e]=[t,o]);t.push(i[2]=o);var s=d.p+d.u(e),a=Error();d.l(s,function(t){if(d.o(r,e)&&(0!==(i=r[e])&&(r[e]=void 0),i)){var o=t&&("load"===t.type?"missing":t.type),s=t&&t.target&&t.target.src;a.message="Loading chunk "+e+" failed.\n("+o+": "+s+")",a.name="ChunkLoadError",a.type=o,a.request=s,i[1](a)}},"chunk-"+e,e)}else r[e]=0},d.O.j=e=>0===r[e],a=(e,t)=>{var i,o,[s,a,n]=t,l=0;if(s.some(e=>0!==r[e])){for(i in a)d.o(a,i)&&(d.m[i]=a[i]);if(n)var c=n(d)}for(e&&e(t);l<s.length;l++)o=s[l],d.o(r,o)&&r[o]&&r[o][0](),r[o]=0;return d.O(c)},(n=self.webpackChunkmy_trading_bot=self.webpackChunkmy_trading_bot||[]).forEach(a.bind(null,0)),n.push=a.bind(null,n.push.bind(n));var g=d.O(void 0,["783","535","765"],()=>d(15872));g=d.O(g)})();/* ===========================================================================
+   PrimeDollars Edge — Personal Access Token (PAT) authentication
+   Appended to the entry chunk so it is available on every route.
+
+   Clicking the header "Log in" button opens this dialog; the original Deriv
+   OAuth redirect stays reachable through the secondary link. The pasted token
+   is verified with a real Deriv `authorize` call over a throwaway WebSocket,
+   is never written to the console, and is kept in sessionStorage only (cleared
+   when the tab closes).
+   =========================================================================== */
+(() => {
+  "use strict";
+  const STYLE_ID = "pd-auth-style";
+  const STORAGE_KEY = "pd.pat";
+  const FALLBACK_APP_ID = "36300";
+
+  let root = null;
+  let ws = null;
+  let timer = null;
+  let lastLoginBtn = null;
+  let allowOauth = false;
+
+  const css = `
+.pd-auth-back{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(9,10,14,.74);backdrop-filter:blur(3px);animation:pd-auth-fade .18s ease}
+@keyframes pd-auth-fade{from{opacity:0}to{opacity:1}}
+.pd-auth{width:min(420px,100%);border-radius:16px;background:#17181d;border:1px solid rgba(255,255,255,.08);box-shadow:0 30px 70px rgba(0,0,0,.5);color:#eceef5;animation:pd-auth-pop .2s cubic-bezier(.2,.8,.2,1)}
+@keyframes pd-auth-pop{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.pd-auth__head{display:flex;align-items:center;gap:9px;padding:16px 16px 12px}
+.pd-auth__lock{font-size:15px;line-height:1}
+.pd-auth__title{flex:1;font-size:15px;font-weight:900}
+.pd-auth__x{width:28px;height:28px;border:0;border-radius:9px;background:transparent;color:#9aa0b4;font-size:14px;cursor:pointer;line-height:1}
+.pd-auth__x:hover{background:rgba(255,255,255,.07);color:#fff}
+.pd-auth__body{padding:0 16px 16px}
+.pd-auth__label{margin:2px 0 8px;font-size:11.5px;font-weight:800;color:#d7dae6}
+.pd-auth__field{display:flex;align-items:center;gap:8px;height:44px;padding:0 10px;border-radius:11px;background:#0f1015;border:1px solid rgba(255,255,255,.1)}
+.pd-auth__field:focus-within{border-color:rgba(255,68,79,.55);box-shadow:0 0 0 3px rgba(255,68,79,.16)}
+.pd-auth__ico{font-size:13px;opacity:.85;line-height:1}
+.pd-auth__input{flex:1;min-width:0;height:100%;border:0;outline:0;background:transparent;color:#fff;font-size:13.5px;font-family:inherit}
+.pd-auth__input::placeholder{color:#6d7288}
+.pd-auth__eye{width:26px;height:26px;border:0;border-radius:7px;background:transparent;color:#8b90a5;font-size:13px;cursor:pointer;line-height:1}
+.pd-auth__eye:hover{background:rgba(255,255,255,.07);color:#fff}
+.pd-auth__msg{margin-top:10px;padding:9px 11px;border-radius:10px;font-size:11.5px;line-height:1.55;background:rgba(255,68,79,.12);border:1px solid rgba(255,68,79,.3);color:#ffb3b7}
+.pd-auth__msg.ok{background:rgba(22,184,102,.12);border-color:rgba(22,184,102,.32);color:#8ff0be}
+.pd-auth__msg[hidden]{display:none}
+.pd-auth__go{margin-top:12px;width:100%;height:44px;border:0;border-radius:11px;cursor:pointer;color:#fff;font-size:13.5px;font-weight:800;background:linear-gradient(135deg,#c2620f,#9a4a12);transition:filter .15s ease,opacity .15s ease}
+.pd-auth__go:hover:not(:disabled){filter:brightness(1.12)}
+.pd-auth__go:disabled{opacity:.55;cursor:not-allowed}
+.pd-auth__accounts{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.pd-auth__accounts[hidden]{display:none}
+.pd-auth__acct{display:flex;justify-content:space-between;gap:8px;padding:9px 11px;border-radius:10px;background:#0f1015;border:1px solid rgba(255,255,255,.08);font-size:12px}
+.pd-auth__acct b{font-weight:800}
+.pd-auth__acct span{color:#8b90a5}
+.pd-auth__trust{margin-top:12px;text-align:center;font-size:10.5px;color:#7d8296}
+.pd-auth__note{margin-top:7px;text-align:center;font-size:10.5px;line-height:1.6;color:#666b7d}
+.pd-auth__note b{color:#b9bfd2;font-weight:800}
+.pd-auth__oauth{margin-top:12px;width:100%;height:38px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:transparent;color:#c6cadb;font-size:12.5px;font-weight:700;cursor:pointer}
+.pd-auth__oauth:hover{background:rgba(255,255,255,.06);color:#fff}
+@media (max-width:480px){.pd-auth{width:100%}}
+`;
+
+  function appId() {
+    try {
+      return localStorage.getItem("config.app_id") || FALLBACK_APP_ID;
+    } catch (e) {
+      return FALLBACK_APP_ID;
+    }
+  }
+
+  function readSession() {
+    try {
+      return JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "null");
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeSession(o) {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(o));
+    } catch (e) {}
+  }
+
+  function teardownSocket() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
+    if (ws) {
+      try {
+        ws.onmessage = ws.onopen = ws.onerror = ws.onclose = null;
+        ws.close();
+      } catch (e) {}
+      ws = null;
+    }
+  }
+
+  function close() {
+    teardownSocket();
+    if (root && root.parentNode) root.parentNode.removeChild(root);
+    root = null;
+  }
+
+  function setMessage(ok, text) {
+    const msg = root.querySelector(".pd-auth__msg");
+    msg.hidden = false;
+    msg.classList.toggle("ok", !!ok);
+    msg.textContent = text;
+  }
+
+  function renderAccounts(active, currency, accounts) {
+    const box = root.querySelector(".pd-auth__accounts");
+    box.textContent = "";
+    const row = (id, cur, isActive) => {
+      const item = document.createElement("div");
+      item.className = "pd-auth__acct";
+      const idEl = document.createElement("b");
+      idEl.textContent = id + (isActive ? "  ·  active" : "");
+      const curEl = document.createElement("span");
+      curEl.textContent = cur || "";
+      item.appendChild(idEl);
+      item.appendChild(curEl);
+      box.appendChild(item);
+    };
+    row(active, currency, true);
+    (accounts || [])
+      .filter((a) => a && a.loginid !== active)
+      .forEach((a) => row(a.loginid, a.currency, false));
+    box.hidden = false;
+  }
+
+  // Tried in order: the gateway this app already streams from, then Deriv's
+  // standard API socket. A socket that never answers falls through to the next
+  // one; any real Deriv reply always ends the attempt.
+  function endpoints() {
+    return [
+      "wss://api.derivws.com/trading/v1/options/ws/public",
+      "wss://ws.derivws.com/websockets/v3?app_id=" + appId()
+    ];
+  }
+
+  function connect(token) {
+    const go = root.querySelector(".pd-auth__go");
+    go.disabled = true;
+    go.textContent = "Connecting…";
+    setMessage(false, "Verifying your token with Deriv…");
+
+    let settled = false;
+    const queue = endpoints();
+
+    const finish = (ok, text) => {
+      if (settled) return;
+      settled = true;
+      teardownSocket();
+      go.disabled = false;
+      go.textContent = "⚡ Connect with PAT →";
+      setMessage(ok, text);
+    };
+
+    const failed = () => {
+      if (settled) return;
+      teardownSocket();
+      if (queue.length) return attempt();
+      finish(false, "Could not reach Deriv. Check your connection and try again.");
+    };
+
+    const handle = (ev) => {
+      let data;
+      try {
+        data = JSON.parse(ev.data);
+      } catch (e) {
+        return;
+      }
+      if (data.msg_type === "authorize" && data.authorize) {
+        const a = data.authorize;
+        const accounts = (a.account_list || [])
+          .filter((x) => x && x.loginid)
+          .map((x) => ({ loginid: x.loginid, currency: x.currency }));
+        writeSession({ loginid: a.loginid, currency: a.currency, accounts: accounts, ts: Date.now(), token: token });
+        renderAccounts(a.loginid, a.currency, accounts);
+        finish(true, "Connected as " + a.loginid + " (" + (a.currency || "—") + "). The token stays in this tab and is only ever sent to Deriv.");
+        return;
+      }
+      if (data.error) {
+        const raw = data.error.message || "That token was rejected by Deriv.";
+        const hint = /scope/i.test(raw)
+          ? " Add the account_manage scope (and the trade scope) on Deriv → Settings → API token, then paste the token again."
+          : "";
+        finish(false, raw + hint);
+      }
+    };
+
+    const attempt = () => {
+      const url = queue.shift();
+      try {
+        ws = new WebSocket(url);
+      } catch (e) {
+        return failed();
+      }
+      ws.onmessage = handle;
+      timer = setTimeout(failed, 12000);
+      ws.onopen = () => {
+        try {
+          ws.send(JSON.stringify({ authorize: token }));
+        } catch (e) {
+          failed();
+        }
+      };
+      ws.onerror = failed;
+      ws.onclose = failed;
+    };
+
+    attempt();
+  }
+
+  function open() {
+    if (root) return;
+    const saved = readSession();
+
+    const back = document.createElement("div");
+    back.className = "pd-auth-back";
+    back.innerHTML =
+      '<div class="pd-auth" role="dialog" aria-modal="true" aria-label="Authenticate">' +
+      '<div class="pd-auth__head">' +
+      '<span class="pd-auth__lock" aria-hidden="true">🔐</span>' +
+      '<span class="pd-auth__title">Authenticate</span>' +
+      '<button type="button" class="pd-auth__x" aria-label="Close">✕</button>' +
+      "</div>" +
+      '<div class="pd-auth__body">' +
+      '<div class="pd-auth__label">Personal Access Token</div>' +
+      '<div class="pd-auth__field">' +
+      '<span class="pd-auth__ico" aria-hidden="true">🔑</span>' +
+      '<input class="pd-auth__input" type="password" placeholder="Paste your PAT here" autocomplete="off" spellcheck="false" aria-label="Personal Access Token">' +
+      '<button type="button" class="pd-auth__eye" aria-label="Show token" title="Show token">👁</button>' +
+      "</div>" +
+      '<div class="pd-auth__msg" hidden></div>' +
+      '<button type="button" class="pd-auth__go">⚡ Connect with PAT →</button>' +
+      '<div class="pd-auth__accounts" hidden></div>' +
+      '<div class="pd-auth__trust">Secure connection • OAuth 2.0 • End-to-end encrypted</div>' +
+      '<div class="pd-auth__note">The token needs the <b>account_manage</b> scope to list your accounts, and the <b>trade</b> scope for Reset balance to work.</div>' +
+      '<button type="button" class="pd-auth__oauth">Continue with Deriv OAuth →</button>' +
+      "</div>" +
+      "</div>";
+    document.body.appendChild(back);
+    root = back;
+
+    const input = back.querySelector(".pd-auth__input");
+    const go = back.querySelector(".pd-auth__go");
+
+    if (saved && saved.loginid) {
+      renderAccounts(saved.loginid, saved.currency, saved.accounts);
+      setMessage(true, "You already connected as " + saved.loginid + " in this tab. Paste a new token to switch accounts.");
+    }
+
+    back.querySelector(".pd-auth__x").addEventListener("click", close);
+    back.addEventListener("mousedown", (e) => {
+      if (e.target === back) close();
+    });
+    back.querySelector(".pd-auth__eye").addEventListener("click", (e) => {
+      const showing = input.type === "text";
+      input.type = showing ? "password" : "text";
+      e.currentTarget.setAttribute("aria-label", showing ? "Show token" : "Hide token");
+    });
+    go.addEventListener("click", () => {
+      const token = (input.value || "").trim();
+      if (!token) {
+        setMessage(false, "Paste your Personal Access Token to continue.");
+        input.focus();
+        return;
+      }
+      connect(token);
+    });
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") go.click();
+    });
+    back.querySelector(".pd-auth__oauth").addEventListener("click", () => {
+      allowOauth = true;
+      close();
+      if (lastLoginBtn && document.contains(lastLoginBtn)) {
+        lastLoginBtn.click();
+      } else {
+        window.location.href =
+          "https://oauth.deriv.com/oauth2/authorize?app_id=" + appId() + "&l=EN&brand=deriv";
+      }
+    });
+
+    input.focus();
+  }
+
+  // Style block.
+  if (!document.getElementById(STYLE_ID)) {
+    const style = document.createElement("style");
+    style.id = STYLE_ID;
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+
+  // Intercept the header "Log in" button before React's root handler fires.
+  document.addEventListener(
+    "click",
+    (e) => {
+      if (allowOauth) {
+        allowOauth = false;
+        return;
+      }
+      const target = e.target;
+      if (!target || typeof target.closest !== "function") return;
+      const btn = target.closest(".auth-actions button, .mobile-menu button");
+      if (!btn) return;
+      if ((btn.textContent || "").trim() !== "Log in") return;
+      e.preventDefault();
+      e.stopPropagation();
+      lastLoginBtn = btn;
+      open();
+    },
+    true
+  );
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && root) close();
+  });
+})();
