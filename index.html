@@ -508,6 +508,20 @@
                 }
             }
         </style>
+        <style>
+            /*
+              Fix: the horizontal tab-strip scroll shadows shipped with an unconditional
+              `display: none !important`, so the "more tabs to the left" hint never rendered.
+              On narrow screens opening Manual Trader auto-scrolls the strip, pushing the
+              Dashboard / Bot Hub tabs off-screen with no visual cue that they were still
+              reachable. The app already mounts these elements conditionally (only when the
+              corresponding tabs are scrolled out of view) and sizes them, so restoring
+              display here is enough to bring the intended affordance back.
+            */
+            .tabs-shadow.tabs-shadow {
+                display: block !important;
+            }
+        </style>
     <script defer src="/static/js/lib-react.e672512d.js"></script><script defer src="/static/js/lib-router.c0e48df8.js"></script><script defer src="/static/js/765.3eeb4d25.js"></script>        <script defer src="/static/js/index.989ed182.js"></script><link href="/static/css/765.3560e13e.css" rel="stylesheet"><link href="/static/css/index.5db11057.css" rel="stylesheet"></head>
 
     <body class="body theme theme--light">
