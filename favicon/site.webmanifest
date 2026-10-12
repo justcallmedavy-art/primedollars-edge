@@ -2,22 +2,25 @@
   "name": "PrimeDollars Edge — Automated Deriv Trading Bots",
   "short_name": "PrimeDollars",
   "description": "Connect Deriv accounts, run trading bots, monitor trades, and manage automated strategies.",
+  "id": "/",
+  "scope": "/",
   "start_url": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
   "theme_color": "#ff444f",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "background_color": "#0b0d12",
+  "display": "standalone",
+  "orientation": "any"
 }
